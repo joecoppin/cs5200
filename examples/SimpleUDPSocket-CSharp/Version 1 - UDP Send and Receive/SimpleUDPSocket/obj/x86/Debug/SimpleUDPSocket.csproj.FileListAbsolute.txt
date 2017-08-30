@@ -1,0 +1,23 @@
+Y:\UnderGit\cs5200s16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.exe.config
+Y:\UnderGit\cs5200s16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.exe
+Y:\UnderGit\cs5200s16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.pdb
+Y:\UnderGit\cs5200s16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.exe
+Y:\UnderGit\cs5200s16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.pdb
+Y:\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.exe.config
+Y:\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.exe
+Y:\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.pdb
+Y:\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.exe
+Y:\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.pdb
+Y:\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.csprojResolveAssemblyReference.cache
+\\psf\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.exe.config
+\\psf\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.exe
+\\psf\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.pdb
+\\psf\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.exe
+\\psf\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.pdb
+\\psf\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\UnderGit\cs5200f17-instructor\Examples\SimpleUDPSocket\Version 1 - UDP Send and Receive\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.exe.config
+\\Mac\Dropbox\UnderGit\cs5200f17-instructor\Examples\SimpleUDPSocket\Version 1 - UDP Send and Receive\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.exe
+\\Mac\Dropbox\UnderGit\cs5200f17-instructor\Examples\SimpleUDPSocket\Version 1 - UDP Send and Receive\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.pdb
+\\Mac\Dropbox\UnderGit\cs5200f17-instructor\Examples\SimpleUDPSocket\Version 1 - UDP Send and Receive\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.exe
+\\Mac\Dropbox\UnderGit\cs5200f17-instructor\Examples\SimpleUDPSocket\Version 1 - UDP Send and Receive\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.pdb
+\\Mac\Dropbox\UnderGit\cs5200f17-instructor\Examples\SimpleUDPSocket\Version 1 - UDP Send and Receive\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.csprojResolveAssemblyReference.cache
