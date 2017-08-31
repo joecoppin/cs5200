@@ -67,13 +67,15 @@ namespace SimpleUDPSocket
 
         private void SendToPeers(string message)
         {
-            if (Peers!=null && Peers.Count>0)
+            if (Peers != null && Peers.Count > 0)
+            {
+                byte[] sendBuffer = Encoding.Unicode.GetBytes(message);
                 foreach (IPEndPoint ep in Peers)
                 {
-                    byte[] sendBuffer = Encoding.Unicode.GetBytes(message);
                     int result = _myUdpClient.Send(sendBuffer, sendBuffer.Length, ep);
                     Console.WriteLine("Send result = {0}", result);
                 }
+            }
         }
     }
 }
