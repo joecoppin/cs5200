@@ -46,7 +46,7 @@ namespace SimpleUDPSocket
                 }
                 catch (SocketException)
                 {
-                    Console.WriteLine("Timeout");
+                    // Console.WriteLine("Timeout");
                 }
                 if (receiveBuffer != null)
                 {
