@@ -1,0 +1,17 @@
+#ignore thumbnails created by windows
+Thumbs.db
+#Ignore files build by Visual Studio
+*.obj
+*.user
+*.userprefs
+*.suo
+*.log
+*.cache
+_ReSharper*/
+[Tt]est[Rr]esult*
+.DS_Store
+Package.txt
+[Pp]ackages/
+Examples/**/[Bb]in/*
+Examples/**/[Oo]bj/*
+Examples/Multicast Example/OO Version/.Multiple Example - Design.vpp.lck
