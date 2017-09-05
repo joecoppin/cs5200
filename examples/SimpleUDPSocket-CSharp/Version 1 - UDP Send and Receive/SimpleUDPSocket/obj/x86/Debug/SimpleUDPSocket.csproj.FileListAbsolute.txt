@@ -28,3 +28,5 @@ Y:\Dropbox\UnderGit\cs5200f16-instructor\Examples\SimpleUDPSocket\SimpleUDPSocke
 \\Mac\Dropbox\UnderGit\cs5200f17-shared\examples\SimpleUDPSocket-CSharp\Version 1 - UDP Send and Receive\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.exe
 \\Mac\Dropbox\UnderGit\cs5200f17-shared\examples\SimpleUDPSocket-CSharp\Version 1 - UDP Send and Receive\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.pdb
 \\Mac\Dropbox\UnderGit\cs5200f17-shared\examples\SimpleUDPSocket-CSharp\Version 1 - UDP Send and Receive\SimpleUDPSocket\obj\x86\Debug\SimpleUDPSocket.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\UnderGit\cs5200f17-shared\examples\SimpleUDPSocket-CSharp\Version 1 - UDP Send and Receive\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.exe
+\\Mac\Dropbox\UnderGit\cs5200f17-shared\examples\SimpleUDPSocket-CSharp\Version 1 - UDP Send and Receive\SimpleUDPSocket\bin\Debug\SimpleUDPSocket.pdb
