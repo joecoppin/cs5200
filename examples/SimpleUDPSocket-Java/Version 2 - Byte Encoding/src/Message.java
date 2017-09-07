@@ -27,10 +27,9 @@ public class Message {
         msg.Timestamp = new Date(buff.getLong());
 
         // get message
-        int msgOffset = Integer.BYTES + Long.BYTES;
-        int msgLength = buff.capacity() - msgOffset;
-        byte[] textBytes = new byte[msgLength];
-        buff.get(textBytes, 0, msgLength);
+        short textLength = buff.getShort();
+        byte[] textBytes = new byte[textLength];
+        buff.get(textBytes, 0, textLength);
         msg.Text = new String(textBytes);
 
         return msg;
@@ -54,7 +53,13 @@ public class Message {
         baos.write(timeBuff.array());
 
         // put text in
-        baos.write(Text.getBytes());
+        byte[] textBytes = Text.getBytes();
+        idBuff = ByteBuffer.allocate(Short.BYTES);
+        idBuff.order(ByteOrder.BIG_ENDIAN);
+        idBuff.putShort((short) textBytes.length);
+        baos.write(idBuff.array());
+
+        baos.write(textBytes);
 
         return baos.toByteArray();
     }
