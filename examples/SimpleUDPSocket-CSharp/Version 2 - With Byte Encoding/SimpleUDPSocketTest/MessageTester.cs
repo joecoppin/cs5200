@@ -29,7 +29,6 @@ namespace SimpleUDPSocketTest
             Assert.AreEqual(msg.Id, msg2.Id);
             Assert.AreEqual(msg.Timestamp, msg2.Timestamp);
             Assert.AreEqual(msg.Text, msg2.Text);
-
         }
     }
 }
