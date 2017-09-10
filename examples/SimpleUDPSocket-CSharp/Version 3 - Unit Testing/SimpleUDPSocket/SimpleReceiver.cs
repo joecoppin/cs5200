@@ -17,7 +17,6 @@ namespace SimpleUDPSocket
 
         public SimpleReceiver()
         {
-            Logger.Debug("Create UdpClient");
             IPEndPoint localEp = new IPEndPoint(IPAddress.Any, 0);
             _myUdpClient = new UdpClient(localEp);
             _myUdpClient.Client.ReceiveTimeout = 1000;
