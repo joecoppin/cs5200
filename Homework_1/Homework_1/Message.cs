@@ -47,6 +47,8 @@ namespace Server_Client
 
         public static Message Decode(byte[] bytes)
         {
+
+            //use this to delegate instructions later on
             Message message = null;
             if(bytes != null)
             {

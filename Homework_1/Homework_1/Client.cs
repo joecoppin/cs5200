@@ -14,6 +14,7 @@ namespace Server_Client
     {
 
         private readonly UdpClient udp_client;
+        //IPEndPoint serverEndpoint = new IPEndPoint();
 
         public List<IPEndPoint> Peers { get; set; }
 
@@ -21,7 +22,9 @@ namespace Server_Client
         {
             IPEndPoint local_endpoint = new IPEndPoint(IPAddress.Any, 0);
             udp_client = new UdpClient(local_endpoint);
-            Peers = new List<IPEndPoint>();
+            //ipenpoint
+            //
+            //Peers = new List<IPEndPoint>();
         }
 
         public void Display()
@@ -33,31 +36,47 @@ namespace Server_Client
 
         }
 
+        public void GetUserInput(){
+			Display();
+			string input = Console.ReadLine();
+			if (!string.IsNullOrEmpty(input) && input.Length > 0)
+			{
+				switch (input.Trim().ToUpper().Substring(0, 1))
+				{
+					case "N":
+						NewGame();
+						break;
+					case "H":
+						Hint();
+						break;
+					case "G":
+						Guess();
+						break;
+					case "Q":
+						Exit();
+						break;
+				}
+			}
+        }
+
+        public Boolean HandleIncommingCom(){
+            //read socket
+            //decode
+            //handle 
+            //return true if data
+            //return false if nothing
+        }
+
         public void Run()
         {
             bool run = true;
 
             while (run)
             {
-                Display();
-                string input = Console.ReadLine();
-                if (!string.IsNullOrEmpty(input) && input.Length > 0)
+                if (!HandleIncommingCom())
                 {
-                    switch (input.Trim().ToUpper().Substring(0, 1))
-                    {
-                        case "N":
-                            NewGame();
-                            break;
-                        case "H":
-                            Hint();
-                            break;
-                        case "G":
-                            Guess();
-                            break;
-                        case "Q":
-                            Exit();
-                            break;
-                    }
+                    //potential problem with using only one thread
+                    GetUserInput();
                 }
             }
         }
@@ -76,9 +95,10 @@ namespace Server_Client
 
             byte[] bytes = message.Encode();
 
-            foreach (IPEndPoint ep in Peers) {
-                int bytesSent = udp_client.Send(bytes, bytes.Length, ep);
-            }
+
+            int bytesSent = udp_client.Send(bytes, bytes.Length, ep);
+            IPEndPoint input;
+            udp_client.Receive(ref input);
         }
 
         private void Guess()
