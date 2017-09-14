@@ -10,7 +10,7 @@ using System.IO;
 namespace Server_Client
 {
 
-    class Message
+    public class Message
     {
         private static readonly ILog logger = LogManager.GetLogger(typeof(Message));
 
@@ -81,6 +81,15 @@ namespace Server_Client
                 // first decode the message type.
                 message.MessageType = ReadShort(memoryStream);
 
+                //NewGame Message
+                if (message.MessageType == 1)
+                {
+                    message.a_num = ReadString(memoryStream);
+                    message.l_name = ReadString(memoryStream);
+                    message.f_name= ReadString(memoryStream);
+                    message.alias = ReadString(memoryStream);
+                }
+
                 //Gamedef message
                 if (message.MessageType == 2)
                 {
@@ -88,6 +97,7 @@ namespace Server_Client
                     message.hint = ReadString(memoryStream);
                     message.def = ReadString(memoryStream);
                 }
+                
                 //Answer Message
                 if (message.MessageType == 4)
                 {
