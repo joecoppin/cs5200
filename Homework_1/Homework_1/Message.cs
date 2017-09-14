@@ -26,47 +26,89 @@ namespace Server_Client
         public short score { get; set; }
         public string error { get; set; }
 
-        public byte[] Encode()
+
+        //need to overwrite this so each message is unique
+        public byte[] Encode_NewGame()
         {
             MemoryStream memoryStream = new MemoryStream();
+
             Write(memoryStream, MessageType);
             Write(memoryStream, a_num);
-            Write(memoryStream, f_name);
             Write(memoryStream, l_name);
+            Write(memoryStream, f_name);
             Write(memoryStream, alias);
+            
+            return memoryStream.ToArray();
+        }
+
+        public byte[] Encode_Guess()
+        {
+            MemoryStream memoryStream = new MemoryStream();
+
+            Write(memoryStream, MessageType);
             Write(memoryStream, game_id);
-            Write(memoryStream, hint);
-            Write(memoryStream, def);
             Write(memoryStream, guess);
-            Write(memoryStream, result);
-            Write(memoryStream, score);
-            Write(memoryStream, error);
+
+            return memoryStream.ToArray();
+        }
+
+        public byte[] Encode_Hint_Exit_Ack()
+        {
+            MemoryStream memoryStream = new MemoryStream();
+
+            Write(memoryStream, MessageType);
+            Write(memoryStream, game_id);
 
             return memoryStream.ToArray();
         }
 
         public static Message Decode(byte[] bytes)
         {
-
-            //use this to delegate instructions later on
             Message message = null;
-            if(bytes != null)
+            
+            if (bytes != null)
             {
                 message = new Message();
-
                 MemoryStream memoryStream = new MemoryStream(bytes);
-
+                // first decode the message type.
                 message.MessageType = ReadShort(memoryStream);
-                message.a_num = ReadString(memoryStream);
-                message.f_name = ReadString(memoryStream);
-                message.l_name = ReadString(memoryStream);
-                message.alias = ReadString(memoryStream);
-                message.game_id = ReadShort(memoryStream);
-                message.hint = ReadString(memoryStream);
-                message.guess = ReadString(memoryStream);
-                //message.result = ReadByte(memoryStream);
-                message.score = ReadShort(memoryStream);
-                message.error = ReadString(memoryStream);
+
+                //Gamedef message
+                if (message.MessageType == 2)
+                {
+                    message.game_id = ReadShort(memoryStream);
+                    message.hint = ReadString(memoryStream);
+                    message.def = ReadString(memoryStream);
+                }
+                //Answer Message
+                if (message.MessageType == 4)
+                {
+                    message.game_id = ReadShort(memoryStream);
+                    message.result = ReadByte(memoryStream);
+                    message.score = ReadShort(memoryStream);
+                    message.hint = ReadString(memoryStream);
+                }
+
+                //Hint message
+                if (message.MessageType == 6)
+                {
+                    message.game_id = ReadShort(memoryStream);
+                    message.hint = ReadString(memoryStream);
+                }
+
+                //Error Message
+                if (message.MessageType == 9)
+                {
+                    message.game_id = ReadShort(memoryStream);
+                    message.error = ReadString(memoryStream);
+                }
+
+                //Heartbeat Message
+                if (message.MessageType == 10)
+                {
+                    message.game_id = ReadShort(memoryStream);
+                }
+              
             }
             return message;
         }
@@ -108,17 +150,14 @@ namespace Server_Client
 
             return IPAddress.NetworkToHostOrder(BitConverter.ToInt32(bytes, 0));
         }
-        /*
+        
         private static byte ReadByte(MemoryStream memoryStream)
         {
-            byte[] bytes = new byte[1];
-            int bytesRead = memoryStream.Read(bytes, 0, bytes.Length);
-            if (bytesRead != bytes.Length)
-                throw new ApplicationException("Cannot decode a byte from message");
-
-            return IPAddress.NetworkToHostOrder(BitConverter.ToBoolean(bytes, 0));
+            byte[] bytes = new byte[0];
+            int bytesRead = memoryStream.Read(bytes, 0, 0);
+            return bytes[0];
         }
-        */
+        
         private static string ReadString(MemoryStream memoryStream)
         {
             string result = String.Empty;

@@ -1,0 +1,136 @@
+2017-09-12 16:26:25,416 [1] INFO  WordGuessServer.Worker - Initializing WordGuessService
+2017-09-12 16:26:25,439 [1] INFO  WordGuessServer.Worker - Starting WordGuessService
+2017-09-12 16:26:25,448 [1] DEBUG Common.Communicator - Initializing communicator
+2017-09-12 16:26:25,450 [1] DEBUG Common.Communicator - Creating UdpClient with end point 0.0.0.0:12001
+2017-09-12 16:26:25,450 [1] INFO  Common.Communicator - Created Communicator's UdpClient, bound to 0.0.0.0:12001
+2017-09-12 16:26:25,450 [1] DEBUG Common.Communicator - Done initializing communicator
+2017-09-12 16:26:25,452 [1] INFO  Common.BackgroundThread - Starting Listener
+2017-09-12 16:26:25,452 [1] INFO  Common.BackgroundThread - Starting Worker
+2017-09-12 16:26:25,452 [1] INFO  Common.BackgroundThread - Starting Cleaner
+2017-09-12 16:26:25,453 [1] INFO  Common.BackgroundThread - Starting HeartbeatGenerator
+2017-09-12 16:26:25,453 [Worker] DEBUG WordGuessServer.Worker - Start Processing
+2017-09-12 16:26:25,453 [HeartbeatGenerator] DEBUG Common.HeartbeatGenerator - Entering Process
+2017-09-12 16:26:25,454 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:25,454 [Worker] DEBUG WordGuessServer.Player - load Student Data from .\PlayerData.csv
+2017-09-12 16:26:25,460 [Worker] DEBUG WordGuessServer.Player - Load Student for File
+2017-09-12 16:26:25,460 [Worker] DEBUG WordGuessServer.Player - Number of fields
+2017-09-12 16:26:25,461 [Worker] DEBUG WordGuessServer.Player - Create student with A000001, Potter, Harry, hp
+2017-09-12 16:26:25,962 [Worker] DEBUG WordGuessServer.Player - Save Student Data to .\PlayerData.csv
+2017-09-12 16:26:25,975 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:25,975 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:26,502 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:26,502 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:27,017 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:27,017 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:27,540 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:27,540 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:28,059 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:28,059 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:28,577 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:28,577 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:29,102 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:29,102 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:29,620 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:29,620 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:30,144 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:30,144 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:30,666 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:30,666 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:31,189 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:31,189 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:31,708 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:31,708 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:32,232 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:32,232 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:32,752 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:32,752 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:33,273 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:33,273 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:33,794 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:33,794 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:34,314 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:34,314 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:34,839 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:34,839 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:35,359 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:35,359 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:35,494 [Cleaner] INFO  WordGuessServer.Game - Cleanup Games
+2017-09-12 16:26:35,874 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:35,874 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:36,394 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:36,394 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:36,916 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:36,916 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:37,440 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:37,440 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:37,966 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:37,966 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:38,488 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:38,488 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:39,009 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:39,009 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:39,278 [Listener] INFO  Common.Communicator - Packet available
+2017-09-12 16:26:39,279 [Listener] DEBUG Common.Communicator - Bytes received: 0 B 
+2017-09-12 16:26:39,284 [Listener] DEBUG Common.Messages.GetHintMessage - Decode an GetStatus
+2017-09-12 16:26:39,285 [Listener] INFO  Common.Communicator - Received Type=GetStatus,  from 127.0.0.1:62713 from 127.0.0.1:62713
+2017-09-12 16:26:39,285 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:39,285 [Listener] DEBUG Common.Communicator - Enqueue message = Type=GetStatus,  from 127.0.0.1:62713
+2017-09-12 16:26:39,285 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:39,285 [Worker] DEBUG Common.Communicator - Dequeue message = Type=GetStatus,  from 127.0.0.1:62713
+2017-09-12 16:26:39,286 [Worker] INFO  WordGuessServer.Worker - Processing Type=GetStatus,  from 127.0.0.1:62713
+2017-09-12 16:26:39,287 [Worker] DEBUG WordGuessServer.Worker - Entering ProcessMessage
+2017-09-12 16:26:39,288 [Worker] INFO  WordGuessServer.Worker - Process GetStatusMessage
+2017-09-12 16:26:39,289 [Worker] DEBUG WordGuessServer.Worker - Number of player 1
+2017-09-12 16:26:39,290 [Worker] INFO  WordGuessServer.Worker - Process add Player to StatusMessage hp,22,6,44,1,616,90,9/9/2017 1:54:12 PM
+2017-09-12 16:26:39,290 [Worker] DEBUG Common.Communicator - Entering Send
+2017-09-12 16:26:39,290 [Worker] DEBUG Common.Communicator - Send Type=Status, ActiveGameCount=0 to 127.0.0.1:62713
+2017-09-12 16:26:39,292 [Worker] INFO  Common.Communicator - Sent Type=Status, ActiveGameCount=0 to 127.0.0.1:62713, result=True
+2017-09-12 16:26:39,292 [Worker] DEBUG Common.Communicator - Leaving Send, result = True
+2017-09-12 16:26:39,292 [Worker] DEBUG WordGuessServer.Worker - Leaving ProcessMessage
+2017-09-12 16:26:39,810 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:39,810 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:40,330 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:40,330 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:40,850 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:40,850 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:41,372 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:41,372 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:41,890 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:41,890 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:42,405 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:42,405 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:42,932 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:42,932 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:43,447 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:43,447 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:43,967 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:43,967 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:44,279 [Listener] INFO  Common.Communicator - Packet available
+2017-09-12 16:26:44,279 [Listener] DEBUG Common.Communicator - Bytes received: 0 B 
+2017-09-12 16:26:44,279 [Listener] DEBUG Common.Messages.GetHintMessage - Decode an GetStatus
+2017-09-12 16:26:44,279 [Listener] INFO  Common.Communicator - Received Type=GetStatus,  from 127.0.0.1:62713 from 127.0.0.1:62713
+2017-09-12 16:26:44,279 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:44,279 [Listener] DEBUG Common.Communicator - Enqueue message = Type=GetStatus,  from 127.0.0.1:62713
+2017-09-12 16:26:44,279 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:44,279 [Worker] DEBUG Common.Communicator - Dequeue message = Type=GetStatus,  from 127.0.0.1:62713
+2017-09-12 16:26:44,279 [Worker] INFO  WordGuessServer.Worker - Processing Type=GetStatus,  from 127.0.0.1:62713
+2017-09-12 16:26:44,279 [Worker] DEBUG WordGuessServer.Worker - Entering ProcessMessage
+2017-09-12 16:26:44,279 [Worker] INFO  WordGuessServer.Worker - Process GetStatusMessage
+2017-09-12 16:26:44,279 [Worker] DEBUG WordGuessServer.Worker - Number of player 1
+2017-09-12 16:26:44,279 [Worker] INFO  WordGuessServer.Worker - Process add Player to StatusMessage hp,22,6,44,1,616,90,9/9/2017 1:54:12 PM
+2017-09-12 16:26:44,279 [Worker] DEBUG Common.Communicator - Entering Send
+2017-09-12 16:26:44,279 [Worker] DEBUG Common.Communicator - Send Type=Status, ActiveGameCount=0 to 127.0.0.1:62713
+2017-09-12 16:26:44,279 [Worker] INFO  Common.Communicator - Sent Type=Status, ActiveGameCount=0 to 127.0.0.1:62713, result=True
+2017-09-12 16:26:44,279 [Worker] DEBUG Common.Communicator - Leaving Send, result = True
+2017-09-12 16:26:44,279 [Worker] DEBUG WordGuessServer.Worker - Leaving ProcessMessage
+2017-09-12 16:26:44,799 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:44,799 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:45,321 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:45,321 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:45,545 [Cleaner] INFO  WordGuessServer.Game - Cleanup Games
+2017-09-12 16:26:45,837 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:45,837 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:46,359 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:46,359 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:46,876 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:46,876 [Listener] DEBUG Common.Communicator - Entering Receive

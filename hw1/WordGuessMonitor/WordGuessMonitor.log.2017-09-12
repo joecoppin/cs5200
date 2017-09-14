@@ -1,0 +1,151 @@
+2017-09-12 16:26:30,157 [1] DEBUG WordGuessMonitor.MonitorForm - Creating a communicator
+2017-09-12 16:26:30,164 [1] DEBUG Common.Communicator - Initializing communicator
+2017-09-12 16:26:30,166 [1] DEBUG Common.Communicator - Creating UdpClient with end point 0.0.0.0:0
+2017-09-12 16:26:30,166 [1] INFO  Common.Communicator - Created Communicator's UdpClient, bound to 0.0.0.0:62713
+2017-09-12 16:26:30,166 [1] DEBUG Common.Communicator - Done initializing communicator
+2017-09-12 16:26:30,166 [1] DEBUG WordGuessMonitor.MonitorForm - Local end point 0.0.0.0:62713
+2017-09-12 16:26:30,166 [1] DEBUG WordGuessMonitor.MonitorForm - Creating a listener
+2017-09-12 16:26:30,167 [1] DEBUG WordGuessMonitor.MonitorForm - Creating a worker
+2017-09-12 16:26:30,167 [1] DEBUG WordGuessMonitor.MonitorForm - Starting a listener
+2017-09-12 16:26:30,167 [1] INFO  Common.BackgroundThread - Starting Listener
+2017-09-12 16:26:30,168 [1] DEBUG WordGuessMonitor.MonitorForm - Starting a worker
+2017-09-12 16:26:30,168 [1] INFO  Common.BackgroundThread - Starting Worker
+2017-09-12 16:26:30,169 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:30,687 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:30,687 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:31,209 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:31,209 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:31,728 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:31,728 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:32,252 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:32,252 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:32,773 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:32,773 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:33,295 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:33,295 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:33,815 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:33,815 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:34,336 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:34,336 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:34,859 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:34,859 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:35,378 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:35,378 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:35,895 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:35,895 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:36,416 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:36,416 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:36,936 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:36,936 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:37,462 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:37,462 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:37,986 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:37,986 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:38,508 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:38,508 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:39,030 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:39,030 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:39,274 [1] DEBUG WordGuessMonitor.MonitorForm - Send a GetStatusMessage to 
+2017-09-12 16:26:39,275 [1] DEBUG Common.Communicator - Entering Send
+2017-09-12 16:26:39,275 [1] DEBUG Common.Communicator - Send Type=GetStatus,  to 127.0.0.1:12001
+2017-09-12 16:26:39,277 [1] INFO  Common.Communicator - Sent Type=GetStatus,  to 127.0.0.1:12001, result=True
+2017-09-12 16:26:39,277 [1] DEBUG Common.Communicator - Leaving Send, result = True
+2017-09-12 16:26:39,299 [Listener] INFO  Common.Communicator - Packet available
+2017-09-12 16:26:39,302 [Listener] DEBUG Common.Communicator - Bytes recieved: 0 C 0 0 0 0 0 0 0 1 0 0 0 1 0 4 0 68 0 70 0 0 0 16 0 0 0 6 0 0 0 2C 0 0 0 1 0 0 2 68 0 0 0 5A 8 D4 F7 8A 40 28 1A 0 
+2017-09-12 16:26:39,304 [Listener] DEBUG Common.Messages.StatusMessage - Decode a AnswerMessage
+2017-09-12 16:26:39,304 [Listener] DEBUG Common.Messages.StatusMessage - Decoded ActiveGameCount = 0
+2017-09-12 16:26:39,304 [Listener] DEBUG Common.Messages.StatusMessage - Decoded StudentCount = 1
+2017-09-12 16:26:39,305 [Listener] DEBUG Common.Messages.StatusMessage - Decoded Player = hp,22,6,44,1,616,90,9/9/2017 1:54:12 PM
+2017-09-12 16:26:39,305 [Listener] DEBUG Common.Messages.StatusMessage - Decoded Student: hp,22,6,44,1,616,90,9/9/2017 1:54:12 PM
+2017-09-12 16:26:39,305 [Listener] INFO  Common.Communicator - Received Type=Status, ActiveGameCount=0 from 127.0.0.1:12001 from 127.0.0.1:12001
+2017-09-12 16:26:39,306 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:39,306 [Listener] DEBUG Common.Listener - Recieved message - Type=Status, ActiveGameCount=0 from 127.0.0.1:12001
+2017-09-12 16:26:39,306 [Listener] DEBUG Common.Communicator - Enqueue message = Type=Status, ActiveGameCount=0 from 127.0.0.1:12001
+2017-09-12 16:26:39,306 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-12 16:26:39,306 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-12 16:26:39,306 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:39,306 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-12 16:26:39,306 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-12 16:26:39,306 [Worker] DEBUG Common.Communicator - Dequeue message = Type=Status, ActiveGameCount=0 from 127.0.0.1:12001
+2017-09-12 16:26:39,306 [Worker] INFO  WordGuessMonitor.Worker - Processing Type=Status, ActiveGameCount=0 from 127.0.0.1:12001
+2017-09-12 16:26:39,307 [Worker] DEBUG WordGuessMonitor.Worker - Enter ProcessMessage, with a Status, Common.Messages.StatusMessage
+2017-09-12 16:26:39,307 [Worker] DEBUG WordGuessMonitor.Worker - Process Status Message
+2017-09-12 16:26:39,308 [1] DEBUG WordGuessMonitor.MonitorForm - Got a StatusMessage
+2017-09-12 16:26:39,308 [1] DEBUG WordGuessMonitor.MonitorForm - _expecting status message True
+2017-09-12 16:26:39,309 [1] DEBUG WordGuessMonitor.MonitorForm - Game Count = 0
+2017-09-12 16:26:39,309 [1] DEBUG WordGuessMonitor.MonitorForm - Player Count = 1
+2017-09-12 16:26:39,310 [Worker] DEBUG WordGuessMonitor.Worker - Leaving ProcessMessage
+2017-09-12 16:26:39,827 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:39,827 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:40,348 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:40,348 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:40,871 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:40,871 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:41,391 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:41,391 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:41,908 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:41,908 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:42,427 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:42,427 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:42,952 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:42,952 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:43,468 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:43,468 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:43,990 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:43,990 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:44,276 [1] DEBUG WordGuessMonitor.MonitorForm - Send a GetStatusMessage to 127.0.0.1:12001
+2017-09-12 16:26:44,276 [1] DEBUG Common.Communicator - Entering Send
+2017-09-12 16:26:44,276 [1] DEBUG Common.Communicator - Send Type=GetStatus,  to 127.0.0.1:12001
+2017-09-12 16:26:44,276 [1] INFO  Common.Communicator - Sent Type=GetStatus,  to 127.0.0.1:12001, result=True
+2017-09-12 16:26:44,276 [1] DEBUG Common.Communicator - Leaving Send, result = True
+2017-09-12 16:26:44,283 [Listener] INFO  Common.Communicator - Packet available
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Communicator - Bytes recieved: 0 C 0 0 0 0 0 0 0 1 0 0 0 1 0 4 0 68 0 70 0 0 0 16 0 0 0 6 0 0 0 2C 0 0 0 1 0 0 2 68 0 0 0 5A 8 D4 F7 8A 40 28 1A 0 
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Messages.StatusMessage - Decode a AnswerMessage
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Messages.StatusMessage - Decoded ActiveGameCount = 0
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Messages.StatusMessage - Decoded StudentCount = 1
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Messages.StatusMessage - Decoded Player = hp,22,6,44,1,616,90,9/9/2017 1:54:12 PM
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Messages.StatusMessage - Decoded Student: hp,22,6,44,1,616,90,9/9/2017 1:54:12 PM
+2017-09-12 16:26:44,283 [Listener] INFO  Common.Communicator - Received Type=Status, ActiveGameCount=0 from 127.0.0.1:12001 from 127.0.0.1:12001
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Listener - Recieved message - Type=Status, ActiveGameCount=0 from 127.0.0.1:12001
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Communicator - Enqueue message = Type=Status, ActiveGameCount=0 from 127.0.0.1:12001
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-12 16:26:44,283 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:44,283 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-12 16:26:44,283 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-12 16:26:44,283 [Worker] DEBUG Common.Communicator - Dequeue message = Type=Status, ActiveGameCount=0 from 127.0.0.1:12001
+2017-09-12 16:26:44,283 [Worker] INFO  WordGuessMonitor.Worker - Processing Type=Status, ActiveGameCount=0 from 127.0.0.1:12001
+2017-09-12 16:26:44,283 [Worker] DEBUG WordGuessMonitor.Worker - Enter ProcessMessage, with a Status, Common.Messages.StatusMessage
+2017-09-12 16:26:44,283 [Worker] DEBUG WordGuessMonitor.Worker - Process Status Message
+2017-09-12 16:26:44,283 [1] DEBUG WordGuessMonitor.MonitorForm - Got a StatusMessage
+2017-09-12 16:26:44,283 [1] DEBUG WordGuessMonitor.MonitorForm - _expecting status message True
+2017-09-12 16:26:44,283 [1] DEBUG WordGuessMonitor.MonitorForm - Game Count = 0
+2017-09-12 16:26:44,283 [1] DEBUG WordGuessMonitor.MonitorForm - Player Count = 1
+2017-09-12 16:26:44,283 [Worker] DEBUG WordGuessMonitor.Worker - Leaving ProcessMessage
+2017-09-12 16:26:44,800 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:44,800 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:45,322 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:45,322 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:45,846 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:45,846 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:46,368 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:46,368 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:46,891 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:46,891 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:47,413 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:47,413 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:47,944 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:47,944 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:48,488 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:48,488 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:49,014 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:49,014 [Listener] DEBUG Common.Communicator - Entering Receive
+2017-09-12 16:26:49,197 [1] INFO  Common.BackgroundThread - Stopping Listener
+2017-09-12 16:26:49,197 [1] INFO  Common.BackgroundThread - Listener Stopped
+2017-09-12 16:26:49,197 [1] INFO  Common.BackgroundThread - Stopping Worker
+2017-09-12 16:26:49,197 [1] INFO  Common.BackgroundThread - Worker Stopped
+2017-09-12 16:26:49,204 [Listener] ERROR Common.Communicator - Unexpected expection while receiving datagram: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Common.Communicator.Receive(Int32 timeout) 
+2017-09-12 16:26:49,204 [Listener] DEBUG Common.Communicator - Leaving Receive
+2017-09-12 16:26:49,204 [Listener] INFO  Common.Listener - Leaving Process method

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Threading;
 using System.Net;
 using System.Net.Sockets;
 
@@ -14,25 +14,26 @@ namespace Server_Client
     {
 
         private readonly UdpClient udp_client;
-        //IPEndPoint serverEndpoint = new IPEndPoint();
+        private static IPAddress tosend = IPAddress.Parse("127.0.0.1");
+        IPEndPoint endPoint = new IPEndPoint(tosend, 12001);
+        
+        private short messageType = 0, id = 0, score = 0;
+        private string a_num = "", l_name = "", f_name = "", alias = "", hint = "", def = "", guess = "", error = "";
+        private byte result = 0;
 
-        public List<IPEndPoint> Peers { get; set; }
 
         public Player()
         {
             IPEndPoint local_endpoint = new IPEndPoint(IPAddress.Any, 0);
             udp_client = new UdpClient(local_endpoint);
-            //ipenpoint
-            //
-            //Peers = new List<IPEndPoint>();
         }
 
         public void Display()
         {
-            Console.WriteLine("(N)ew Game");
-            Console.WriteLine("(H)int");
-            Console.WriteLine("(G)uess");
-            Console.WriteLine("(Q)uit");
+            Console.Clear();
+            Console.WriteLine($"(N)ew Game | (H)int | (G)uess | (Q)uit \t\t Score {score}");
+            Console.WriteLine($"Definition: {def}");
+            Console.WriteLine($"Answer: {hint}");
 
         }
 
@@ -59,32 +60,97 @@ namespace Server_Client
 			}
         }
 
-        public Boolean HandleIncommingCom(){
-            //read socket
-            //decode
-            //handle 
-            //return true if data
-            //return false if nothing
+        public void HandleIncommingCom(){
+            while (true)
+            {
+                byte[] bytes = null;
+
+                //read socket
+                try
+                {
+                    bytes = udp_client.Receive(ref endPoint);
+                }
+                catch (SocketException error)
+                {
+                    if (error.SocketErrorCode != SocketError.TimedOut)
+                        throw;
+                }
+                //decode
+                if (bytes != null)
+                {
+                    Message message = Message.Decode(bytes);
+                    if (message != null)
+                    {
+                        messageType = message.MessageType;
+                        id = message.game_id;
+
+                        if (message.MessageType == 2)
+                        {
+                            //Console.WriteLine("GameDef Message Received");
+                            //Console.WriteLine($"Game ID: {message.game_id}");
+                            //Console.WriteLine($"Defition: {message.def}");
+                            // Console.WriteLine($"Hint: {message.hint}");
+                            def = message.def;
+                            hint = message.hint;
+                        }
+                        if (message.MessageType == 4)
+                        {
+                            //Console.WriteLine("Answer Message Received");
+                            // Console.WriteLine($"Game ID: {message.game_id}");
+                            // Console.WriteLine($"Result: {message.result}");
+                            // Console.WriteLine($"Score: {message.score}");
+                            //Console.WriteLine($"Hint: {message.hint}");
+                            score = message.score;
+                            result = message.result;
+                            hint = message.hint;
+                        }
+                        if (message.MessageType == 6)
+                        {
+                            //Console.WriteLine("Hint Message Received");
+                            // Console.WriteLine($"Game ID: {message.game_id}");
+                            //Console.WriteLine($"Hint: {message.hint}");
+                            hint = message.hint;
+                        }
+                        if (message.MessageType == 9)
+                        {
+                            //Console.WriteLine("Error Message Received");
+                            // Console.WriteLine($"Game ID: {message.game_id}");
+                            // Console.WriteLine($"Error: {message.error}");
+                            error = message.error;
+                        }
+                        if (message.MessageType == 10)
+                        {
+                            //Console.WriteLine("Heartbeat Message Received");
+                            // Console.WriteLine($"Game ID: {message.game_id}");
+                            Ack();
+                        }
+
+                    }
+                }
+                //handle --update variables as needed     
+            }
         }
 
         public void Run()
         {
             bool run = true;
-
+            GetUserInput();
+            Thread handle = new Thread(new ThreadStart(HandleIncommingCom));
+            //Thread getUser = new Thread(new ThreadStart(GetUserInput));
+            handle.Start();
+            //getUser.Start();
             while (run)
             {
-                if (!HandleIncommingCom())
-                {
-                    //potential problem with using only one thread
-                    GetUserInput();
-                }
+                GetUserInput();
             }
+            handle.Join();
+            //getUser.Join();
         }
 
         private void NewGame()
         {
-            Console.WriteLine("In NewGame Function");
-            Message message = new Message()
+        // Console.WriteLine("In NewGame Function");
+        Message message = new Message()
             {
                 MessageType = 1,
                 a_num = "a01499868_hardcoded",
@@ -93,20 +159,15 @@ namespace Server_Client
                 alias = "jc"
             };
 
-            byte[] bytes = message.Encode();
-
-
-            int bytesSent = udp_client.Send(bytes, bytes.Length, ep);
-            IPEndPoint input;
-            udp_client.Receive(ref input);
+            byte[] bytes = message.Encode_NewGame();
+            int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
 
         private void Guess()
         {
-            Console.WriteLine("In Guess Function");
+           // Console.WriteLine("In Guess Function");
             Console.WriteLine("Input Guess: ");
             string my_guess = Console.ReadLine();
-            short id = 1;
 
             Message message = new Message()
             {
@@ -114,62 +175,53 @@ namespace Server_Client
                 game_id = id,
                 guess = my_guess
             };
-            byte[] bytes = message.Encode();
+            byte[] bytes = message.Encode_Guess();
 
-            foreach (IPEndPoint ep in Peers)
-            {
-                int bytesSent = udp_client.Send(bytes, bytes.Length, ep);
-            }
+            int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
 
         private void Hint()
         {
-           
-            Console.WriteLine("In GetHint Function");
-            short id = 1;
+            //Console.WriteLine("In GetHint Function");
             Message message = new Message()
             {
                 MessageType = 5,
                 game_id = id,
             };
-            byte[] bytes = message.Encode();
-
-            foreach (IPEndPoint ep in Peers)
-            {
-                int bytesSent = udp_client.Send(bytes, bytes.Length, ep);
-            }
+            byte[] bytes = message.Encode_Hint_Exit_Ack();
+            int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
 
         private void Exit()
         {
-            short id = 1;
             Message message = new Message()
             {
                 MessageType = 7,
                 game_id = id,
             };
-            byte[] bytes = message.Encode();
-
-            foreach (IPEndPoint ep in Peers)
-            {
-                int bytesSent = udp_client.Send(bytes, bytes.Length, ep);
-            }
+            byte[] bytes = message.Encode_Hint_Exit_Ack();
+            int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
 
         private void Ack()
         {
-            short id = 1;
+
             Message message = new Message()
             {
                 MessageType = 8,
                 game_id = id,
             };
-            byte[] bytes = message.Encode();
+            byte[] bytes = message.Encode_Hint_Exit_Ack();
+            int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
+        }
+    }
 
-            foreach (IPEndPoint ep in Peers)
-            {
-                int bytesSent = udp_client.Send(bytes, bytes.Length, ep);
-            }
+     class Program
+    {
+        static void Main()
+        { 
+            Player player = new Player();
+            player.Run();
         }
     }
 }
