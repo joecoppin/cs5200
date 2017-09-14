@@ -1,2 +1,0 @@
-C:\Users\Joe\USU\cs5200f17-shared\Test\Project1\Project1\obj\Debug\Project1.csprojResolveAssemblyReference.cache
-C:\Users\Joe\USU\cs5200f17-shared\Test\Project1\Project1\obj\Debug\Project1.csproj.CoreCompileInputs.cache

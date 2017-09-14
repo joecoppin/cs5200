@@ -9,6 +9,7 @@ using System.IO;
 
 namespace Server_Client
 {
+
     class Message
     {
         private static readonly ILog logger = LogManager.GetLogger(typeof(Message));

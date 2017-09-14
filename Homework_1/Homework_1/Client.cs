@@ -17,11 +17,10 @@ namespace Server_Client
         private static readonly ILog logger = LogManager.GetLogger(typeof(Player));
 
         private readonly UdpClient udp_client;
-        private static IPAddress tosend = IPAddress.Parse("127.0.0.1");
-        IPEndPoint endPoint = new IPEndPoint(tosend, 12001);
+        IPEndPoint endPoint;
         
         private short messageType = 0, id = 0, score = 0;
-        private string a_num = "", l_name = "", f_name = "", alias = "", hint = "", def = "", guess = "", error = "";
+        private string my_a_num = "", my_l_name = "", my_f_name = "", my_alias = "", hint = "", def = "", error = "";
         private byte result = 0;
 
 
@@ -40,7 +39,8 @@ namespace Server_Client
 
         }
 
-        public void GetUserInput(){
+        public void GetUserInput(ref bool run){
+            bool isTrue = run;
 			Display();
 			string input = Console.ReadLine();
 			if (!string.IsNullOrEmpty(input) && input.Length > 0)
@@ -57,7 +57,7 @@ namespace Server_Client
 						Guess();
 						break;
 					case "Q":
-						Exit();
+						Exit(ref isTrue);
 						break;
 				}
 			}
@@ -89,65 +89,70 @@ namespace Server_Client
 
                         if (message.MessageType == 2)
                         {
-                            //Console.WriteLine("GameDef Message Received");
-                            //Console.WriteLine($"Game ID: {message.game_id}");
-                            //Console.WriteLine($"Defition: {message.def}");
-                            // Console.WriteLine($"Hint: {message.hint}");
+                            logger.Debug("GameDef Message Received");
+                            logger.Debug($"Game ID: {message.game_id}");
+                            logger.Debug($"Defition: {message.def}");
+                            logger.Debug($"Hint: {message.hint}");
                             def = message.def;
                             hint = message.hint;
                         }
                         if (message.MessageType == 4)
                         {
-                            //Console.WriteLine("Answer Message Received");
-                            // Console.WriteLine($"Game ID: {message.game_id}");
-                            // Console.WriteLine($"Result: {message.result}");
-                            // Console.WriteLine($"Score: {message.score}");
-                            //Console.WriteLine($"Hint: {message.hint}");
+                            logger.Debug("Answer Message Received");
+                            logger.Debug($"Game ID: {message.game_id}");
+                            logger.Debug($"Result: {message.result}");
+                            logger.Debug($"Score: {message.score}");
+                            logger.Debug($"Hint: {message.hint}");
                             score = message.score;
                             result = message.result;
                             hint = message.hint;
                         }
                         if (message.MessageType == 6)
                         {
-                            //Console.WriteLine("Hint Message Received");
-                            // Console.WriteLine($"Game ID: {message.game_id}");
-                            //Console.WriteLine($"Hint: {message.hint}");
+                            logger.Debug("Hint Message Received");
+                            logger.Debug($"Game ID: {message.game_id}");
+                            logger.Debug($"Hint: {message.hint}");
                             hint = message.hint;
                         }
                         if (message.MessageType == 9)
                         {
-                            //Console.WriteLine("Error Message Received");
-                            // Console.WriteLine($"Game ID: {message.game_id}");
-                            // Console.WriteLine($"Error: {message.error}");
+                            logger.Debug("Error Message Received");
+                            logger.Debug($"Game ID: {message.game_id}");
+                            logger.Debug($"Error: {message.error}");
                             error = message.error;
                         }
                         if (message.MessageType == 10)
                         {
-                            //Console.WriteLine("Heartbeat Message Received");
-                            // Console.WriteLine($"Game ID: {message.game_id}");
+                            logger.Debug("Heartbeat Message Received");
+                            logger.Debug($"Game ID: {message.game_id}");
                             Ack();
                         }
 
                     }
                 }
-                //handle --update variables as needed     
             }
         }
 
-        public void Run()
+        public void Run(string serverPortAddress, List<string> info)
         {
             bool run = true;
-            GetUserInput();
+            string address = serverPortAddress;
+            List<string> myList = info;
+            my_f_name = myList.ElementAt(0);
+            my_l_name = myList.ElementAt(1);
+            my_a_num = myList.ElementAt(2);
+            my_alias = myList.ElementAt(3);
+
+            IPEndPoint myEndPoint = Endpoints.Parse(address);
+            endPoint = myEndPoint;
+            GetUserInput(ref run);
             Thread handle = new Thread(new ThreadStart(HandleIncommingCom));
-            //Thread getUser = new Thread(new ThreadStart(GetUserInput));
             handle.Start();
-            //getUser.Start();
             while (run)
             {
-                GetUserInput();
+                GetUserInput(ref run);
             }
             handle.Join();
-            //getUser.Join();
         }
 
         private void NewGame()
@@ -157,10 +162,10 @@ namespace Server_Client
         Message message = new Message()
             {
                 MessageType = 1,
-                a_num = "a01499868_hardcoded",
-                l_name = "coppin_hc",
-                f_name = "joe_hc",
-                alias = "jc"
+                a_num = my_a_num,
+                l_name = my_l_name,
+                f_name = my_f_name,
+                alias = my_alias
             };
 
             byte[] bytes = message.Encode_NewGame();
@@ -198,7 +203,7 @@ namespace Server_Client
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
 
-        private void Exit()
+        private void Exit(ref bool run)
         {
             Message message = new Message()
             {
@@ -208,7 +213,8 @@ namespace Server_Client
             byte[] bytes = message.Encode_Hint_Exit_Ack();
             logger.Debug(bytes);
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
-            
+
+            run = false;
         }
 
         private void Ack()
@@ -227,11 +233,59 @@ namespace Server_Client
 
      class Program
     {
+        private static readonly ILog logger = LogManager.GetLogger(typeof(Program));
+
+        public static string GetServer()
+        {
+            Console.WriteLine("Please input server and port number: (Ex: 127.0.0.1:12001)");
+            string server = Console.ReadLine();
+            return server;
+        }
+        /*
+        public static void ReadFile()
+        {
+            System.IO.StreamReader file = new System.IO.StreamReader("Log4NetDebugger.log");
+
+        }
+        */
+        public static List<string> GetInfo()
+        {
+            List<string> info = new List<string>();
+            Console.WriteLine("Please enter your First Name: ");
+            string first = Console.ReadLine();
+            Console.WriteLine("Please enter your Last Name: ");
+            string last = Console.ReadLine();
+            Console.WriteLine("Please enter your A#: ");
+            string aNum = Console.ReadLine();
+            Console.WriteLine("Please enter your Alias: ");
+            string alias = Console.ReadLine();
+            info.Add(first);
+            info.Add(last);
+            info.Add(aNum);
+            info.Add(alias);
+
+            return info;
+        }
         static void Main()
         {
+
             XmlConfigurator.Configure();
+            string serverPortAddress = "";
+            List<string> info = new List<string>();
+            //ReadFile();
+            /*if (istrue)
+            {
+                //TODO input server address and port from file
+            }
+            else
+            {
+            }*/
+            serverPortAddress = GetServer();
+            info = GetInfo();
+            logger.Info($"Server and Port Number: {serverPortAddress}");
+
             Player player = new Player();
-            player.Run();
+            player.Run(serverPortAddress, info);
         }
     }
 }
