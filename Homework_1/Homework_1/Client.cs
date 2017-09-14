@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Net;
 using System.Net.Sockets;
+using log4net;
+using log4net.Config;
 
 namespace Server_Client
 {
     class Player
     {
+        private static readonly ILog logger = LogManager.GetLogger(typeof(Player));
 
         private readonly UdpClient udp_client;
         private static IPAddress tosend = IPAddress.Parse("127.0.0.1");
@@ -149,6 +152,7 @@ namespace Server_Client
 
         private void NewGame()
         {
+            logger.Info("In NewGame Function--Creating and Sending message");
         // Console.WriteLine("In NewGame Function");
         Message message = new Message()
             {
@@ -160,12 +164,13 @@ namespace Server_Client
             };
 
             byte[] bytes = message.Encode_NewGame();
+            logger.Debug(bytes);
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
 
         private void Guess()
         {
-           // Console.WriteLine("In Guess Function");
+            logger.Info("In Guess Function");
             Console.WriteLine("Input Guess: ");
             string my_guess = Console.ReadLine();
 
@@ -176,19 +181,20 @@ namespace Server_Client
                 guess = my_guess
             };
             byte[] bytes = message.Encode_Guess();
-
+            logger.Debug(bytes);
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
 
         private void Hint()
         {
-            //Console.WriteLine("In GetHint Function");
+            logger.Info("In GetHint Function");
             Message message = new Message()
             {
                 MessageType = 5,
                 game_id = id,
             };
             byte[] bytes = message.Encode_Hint_Exit_Ack();
+            logger.Debug(bytes);
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
 
@@ -200,7 +206,9 @@ namespace Server_Client
                 game_id = id,
             };
             byte[] bytes = message.Encode_Hint_Exit_Ack();
+            logger.Debug(bytes);
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
+            
         }
 
         private void Ack()
@@ -212,6 +220,7 @@ namespace Server_Client
                 game_id = id,
             };
             byte[] bytes = message.Encode_Hint_Exit_Ack();
+            logger.Debug(bytes);
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
     }
@@ -219,7 +228,8 @@ namespace Server_Client
      class Program
     {
         static void Main()
-        { 
+        {
+            XmlConfigurator.Configure();
             Player player = new Player();
             player.Run();
         }

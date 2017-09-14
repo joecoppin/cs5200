@@ -30,6 +30,7 @@ namespace Server_Client
         //need to overwrite this so each message is unique
         public byte[] Encode_NewGame()
         {
+            logger.Info("Encoding NewGame Function");
             MemoryStream memoryStream = new MemoryStream();
 
             Write(memoryStream, MessageType);
@@ -43,6 +44,8 @@ namespace Server_Client
 
         public byte[] Encode_Guess()
         {
+            logger.Info("Encoding Guess Function");
+
             MemoryStream memoryStream = new MemoryStream();
 
             Write(memoryStream, MessageType);
@@ -54,6 +57,8 @@ namespace Server_Client
 
         public byte[] Encode_Hint_Exit_Ack()
         {
+            logger.Info("Encoding Hint/Exit/Ack Function");
+
             MemoryStream memoryStream = new MemoryStream();
 
             Write(memoryStream, MessageType);
@@ -64,6 +69,8 @@ namespace Server_Client
 
         public static Message Decode(byte[] bytes)
         {
+            logger.Info("In Message.Decode Function");
+
             Message message = null;
             
             if (bytes != null)
@@ -116,18 +123,21 @@ namespace Server_Client
         private static void Write(MemoryStream memoryStream, short value)
         {
             byte[] bytes = BitConverter.GetBytes(IPAddress.HostToNetworkOrder(value));
+            logger.Debug($"Write short: {bytes}");
             memoryStream.Write(bytes, 0, bytes.Length);
         }
         private static void Write(MemoryStream memoryStream, string value)
         {
             byte[] bytes = Encoding.BigEndianUnicode.GetBytes(value);
             Write(memoryStream, (short)bytes.Length);
+            logger.Debug($"Write string: {bytes}");
             memoryStream.Write(bytes, 0, bytes.Length);
         }
 
         private static void Write(MemoryStream memoryStream, byte value)
         {
             byte[] bytes = BitConverter.GetBytes(IPAddress.HostToNetworkOrder(value));
+            logger.Debug($"Write byte: {bytes}");
             memoryStream.Write(bytes, 0, bytes.Length);
         }
 
@@ -137,7 +147,6 @@ namespace Server_Client
             int bytesRead = memoryStream.Read(bytes, 0, bytes.Length);
             if (bytesRead != bytes.Length)
                 throw new ApplicationException("Cannot decode a short integer from message");
-
             return IPAddress.NetworkToHostOrder(BitConverter.ToInt16(bytes, 0));
         }
 
@@ -153,8 +162,8 @@ namespace Server_Client
         
         private static byte ReadByte(MemoryStream memoryStream)
         {
-            byte[] bytes = new byte[0];
-            int bytesRead = memoryStream.Read(bytes, 0, 0);
+            byte[] bytes = new byte[1];
+            int bytesRead = memoryStream.Read(bytes, 0, 1);
             return bytes[0];
         }
         
