@@ -1,4 +1,4 @@
-﻿
+﻿using System.IO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace Server_Client
         IPEndPoint endPoint;
         
         private short messageType = 0, id = 0, score = 0;
-        private string my_a_num = "", my_l_name = "", my_f_name = "", my_alias = "", hint = "", def = "", error = "";
+        private string my_a_num = "", my_l_name = "", my_f_name = "", my_alias = "", hint = "", def = "", error = "", my_server_info = "";
         private byte result = 0;
 
 
@@ -33,14 +33,14 @@ namespace Server_Client
         public void Display()
         {
             Console.Clear();
-            Console.WriteLine($"(N)ew Game | (H)int | (G)uess | (Q)uit \t\t Score {score}");
+            Console.WriteLine($"(N)ew Game | (H)int | (G)uess | (Q)uit | (U)pdate Info \n");
+            Console.WriteLine($"Score {score} \t\t{my_f_name} {my_alias} {my_a_num}\n\n");
             Console.WriteLine($"Definition: {def}");
-            Console.WriteLine($"Answer: {hint}");
-
+            Console.WriteLine($"Answer: {hint} \n\n");
+            Console.WriteLine($"Server Info {my_server_info} \t ");
         }
 
-        public void GetUserInput(ref bool run){
-            bool isTrue = run;
+        public void GetUserInput(){
 			Display();
 			string input = Console.ReadLine();
 			if (!string.IsNullOrEmpty(input) && input.Length > 0)
@@ -57,8 +57,12 @@ namespace Server_Client
 						Guess();
 						break;
 					case "Q":
-						Exit(ref isTrue);
+						Exit();
 						break;
+                    case "U":
+                        UpdateInfo();
+                        break;
+
 				}
 			}
         }
@@ -95,6 +99,7 @@ namespace Server_Client
                             logger.Debug($"Hint: {message.hint}");
                             def = message.def;
                             hint = message.hint;
+                            Display();
                         }
                         if (message.MessageType == 4)
                         {
@@ -106,6 +111,16 @@ namespace Server_Client
                             score = message.score;
                             result = message.result;
                             hint = message.hint;
+                            if (result == 1)
+                            {
+                                Display();
+                                Console.WriteLine("\n\nCorrect!");
+                            }
+                            else
+                            {
+                                Display();
+                                Console.WriteLine("\n\nIncorrect");
+                            }  
                         }
                         if (message.MessageType == 6)
                         {
@@ -113,6 +128,7 @@ namespace Server_Client
                             logger.Debug($"Game ID: {message.game_id}");
                             logger.Debug($"Hint: {message.hint}");
                             hint = message.hint;
+                            Display();
                         }
                         if (message.MessageType == 9)
                         {
@@ -120,6 +136,7 @@ namespace Server_Client
                             logger.Debug($"Game ID: {message.game_id}");
                             logger.Debug($"Error: {message.error}");
                             error = message.error;
+                            Display();
                         }
                         if (message.MessageType == 10)
                         {
@@ -137,6 +154,7 @@ namespace Server_Client
         {
             bool run = true;
             string address = serverPortAddress;
+            my_server_info = serverPortAddress;
             List<string> myList = info;
             my_f_name = myList.ElementAt(0);
             my_l_name = myList.ElementAt(1);
@@ -145,12 +163,12 @@ namespace Server_Client
 
             IPEndPoint myEndPoint = Endpoints.Parse(address);
             endPoint = myEndPoint;
-            GetUserInput(ref run);
+            GetUserInput();
             Thread handle = new Thread(new ThreadStart(HandleIncommingCom));
             handle.Start();
             while (run)
             {
-                GetUserInput(ref run);
+                GetUserInput();
             }
             handle.Join();
         }
@@ -203,7 +221,7 @@ namespace Server_Client
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
 
-        private void Exit(ref bool run)
+        private void Exit()
         {
             Message message = new Message()
             {
@@ -213,8 +231,8 @@ namespace Server_Client
             byte[] bytes = message.Encode_Hint_Exit_Ack();
             logger.Debug(bytes);
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
-
-            run = false;
+            SaveSettings();
+            Environment.Exit(0);
         }
 
         private void Ack()
@@ -229,6 +247,33 @@ namespace Server_Client
             logger.Debug(bytes);
             int bytesSent = udp_client.Send(bytes, bytes.Length, endPoint);
         }
+        public void UpdateInfo()
+        {
+            Console.WriteLine("Please enter your First Name: ");
+            string first = Console.ReadLine();
+            Console.WriteLine("Please enter your Last Name: ");
+            string last = Console.ReadLine();
+            Console.WriteLine("Please enter your A#: ");
+            string aNum = Console.ReadLine();
+            Console.WriteLine("Please enter your Alias: ");
+            string alias = Console.ReadLine();
+
+            my_f_name = first;
+            my_l_name = last;
+            my_a_num = aNum;
+            my_alias = alias;
+
+            Display();
+        }
+
+        void SaveSettings()
+        {
+            string personal = my_f_name + " " + my_l_name + " " + my_a_num + " " + my_alias;
+            string server = my_server_info;
+
+            System.IO.File.WriteAllText("user.txt", personal);
+            System.IO.File.WriteAllText("server.txt", server);                   
+        }
     }
 
      class Program
@@ -241,13 +286,23 @@ namespace Server_Client
             string server = Console.ReadLine();
             return server;
         }
-        /*
-        public static void ReadFile()
+        
+        public static List<string> ReadFile(string file)
         {
-            System.IO.StreamReader file = new System.IO.StreamReader("Log4NetDebugger.log");
+            var list = new List<string>();
+            string[] words;
+            var fileStream = new FileStream(file, FileMode.Open, FileAccess.Read);
+            using (var streamReader = new StreamReader(fileStream, Encoding.UTF8))
+            {
+                words = streamReader.ReadToEnd().Split(' ');
+            }
 
+            //add words to list
+            list.AddRange(words);
+
+            return list;
         }
-        */
+        
         public static List<string> GetInfo()
         {
             List<string> info = new List<string>();
@@ -270,19 +325,55 @@ namespace Server_Client
         {
 
             XmlConfigurator.Configure();
-            string serverPortAddress = "";
+            string serverPortAddress = "", input = "", user_f = "user.txt", server_f = "server.txt";
             List<string> info = new List<string>();
-            //ReadFile();
-            /*if (istrue)
+                       
+            if (File.Exists(user_f))
             {
-                //TODO input server address and port from file
+                Console.WriteLine("A User Config File exists.  Would you like to use the default user information? (y/n)");
+                input = Console.ReadLine();
+                if (!string.IsNullOrEmpty(input) && input.Length > 0)
+                {
+                    switch (input.Trim().ToUpper().Substring(0, 1))
+                    {
+                        case "N":
+                            info = GetInfo();
+                            break;
+                        case "Y":
+                            info = ReadFile(user_f);
+                            break;
+                    }
+                }
             }
-            else
+            if(!File.Exists(user_f))
             {
-            }*/
-            serverPortAddress = GetServer();
-            info = GetInfo();
-            logger.Info($"Server and Port Number: {serverPortAddress}");
+                info = GetInfo();
+            }
+            if (File.Exists(server_f))
+            {
+                Console.WriteLine("Would you like to use the server address and port used in the last session? (y/n)");
+                input = Console.ReadLine();
+                if (!string.IsNullOrEmpty(input) && input.Length > 0)
+                {
+                    switch (input.Trim().ToUpper().Substring(0, 1))
+                    {
+                        case "N":
+                            serverPortAddress = GetServer();
+                            logger.Info($"Server and Port Number: {serverPortAddress}");
+                            break;
+                        case "Y":
+                            List<string> serverInfo =ReadFile(server_f);
+                            serverPortAddress = serverInfo.First();
+                            break;
+                    }
+                }
+            }
+            if (!File.Exists(server_f))
+            {
+                serverPortAddress = GetServer();
+                logger.Info($"Server and Port Number: {serverPortAddress}");
+            }
+            
 
             Player player = new Player();
             player.Run(serverPortAddress, info);
