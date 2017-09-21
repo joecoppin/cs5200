@@ -1,0 +1,1750 @@
+2017-09-09 13:53:28,280 [1] DEBUG WordGuessPlayer.PlayerForm - Creating a communicator
+2017-09-09 13:53:28,289 [1] DEBUG WordGuessPlayer.PlayerForm - Creating a listener
+2017-09-09 13:53:28,290 [1] DEBUG WordGuessPlayer.PlayerForm - Creating a worker
+2017-09-09 13:53:28,290 [1] DEBUG WordGuessPlayer.PlayerForm - Starting a listener
+2017-09-09 13:53:28,291 [1] INFO  Common.BackgroundThread - Starting Listener
+2017-09-09 13:53:28,291 [1] DEBUG WordGuessPlayer.PlayerForm - Starting a worker
+2017-09-09 13:53:28,291 [1] INFO  Common.BackgroundThread - Starting Worker
+2017-09-09 13:53:35,454 [Listener] DEBUG Common.Messages.GameDef - Decode an GameDef
+2017-09-09 13:53:35,454 [Listener] DEBUG Common.Messages.GameDef - Decoded GameId = 1
+2017-09-09 13:53:35,457 [Listener] DEBUG Common.Messages.GameDef - Decoded Hint = _________
+2017-09-09 13:53:35,457 [Listener] DEBUG Common.Messages.GameDef - Decoded Definition = study of bird's nests
+2017-09-09 13:53:35,458 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:35,458 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:35,458 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:35,458 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:35,458 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=GameDef, GameId=1, Hint=_________, LastName=study of bird's nests from 127.0.0.1:12001
+2017-09-09 13:53:35,459 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:35,463 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:35,828 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:35,828 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:35,828 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:35,828 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:35,828 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:35,828 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:35,828 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:35,828 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:35,830 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:36,326 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:36,326 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:36,326 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:36,326 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:36,326 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:36,326 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:36,326 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:36,326 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:36,326 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:36,821 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:36,821 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:36,821 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:36,821 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:36,821 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:36,821 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:36,821 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:36,821 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:36,821 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:37,322 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:37,322 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:37,322 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:37,322 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:37,322 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:37,322 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:37,322 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:37,322 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:37,322 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:37,824 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:37,824 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:37,824 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:37,824 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:37,824 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:37,824 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:37,824 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:37,824 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:37,824 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:38,327 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:38,327 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:38,327 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:38,327 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:38,327 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:38,327 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:38,327 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:38,327 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:38,327 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:38,824 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:38,824 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:38,824 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:38,824 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:38,824 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:38,824 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:38,824 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:38,824 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:38,824 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:39,325 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:39,325 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:39,325 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:39,325 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:39,325 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:39,325 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:39,325 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:39,325 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:39,325 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:39,835 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:39,835 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:39,835 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:39,835 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:39,835 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:39,835 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:39,835 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:39,835 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:39,835 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:40,329 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:40,329 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:40,329 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:40,329 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:40,329 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:40,329 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:40,329 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:40,329 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:40,329 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:40,837 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:40,837 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:40,837 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:40,837 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:40,837 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:40,837 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:40,837 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:40,837 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:40,837 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:41,334 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:41,334 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:41,334 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:41,334 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:41,334 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:41,334 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:41,334 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:41,334 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:41,334 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:41,829 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:41,829 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:41,829 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:41,829 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:41,829 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:41,829 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:41,829 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:41,829 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:41,829 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:42,337 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:42,337 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:42,337 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:42,337 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:42,337 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:42,337 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:42,337 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:42,337 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:42,337 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:42,832 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:42,832 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:42,832 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:42,832 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:42,832 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:42,832 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:42,832 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:42,832 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:42,832 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:43,339 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:43,339 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:43,339 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:43,339 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:43,339 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:43,339 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:43,339 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:43,339 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:43,339 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:43,836 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:43,836 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:43,836 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:43,836 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:43,836 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:43,836 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:43,836 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:43,836 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:43,836 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:44,338 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:44,338 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:44,338 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:44,338 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:44,338 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:44,338 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:44,338 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:44,338 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:44,338 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:44,842 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:44,842 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:44,842 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:44,842 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:44,842 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:44,842 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:44,842 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:44,842 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:44,842 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:45,336 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:45,336 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:45,336 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:45,336 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:45,336 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:45,336 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:45,336 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:45,336 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:45,336 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:45,844 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:45,844 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:45,844 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:45,844 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:45,844 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:45,844 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:45,844 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:45,844 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:45,844 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:46,081 [Listener] DEBUG Common.Messages.GameDef - Decode an GameDef
+2017-09-09 13:53:46,081 [Listener] DEBUG Common.Messages.GameDef - Decoded GameId = 2
+2017-09-09 13:53:46,081 [Listener] DEBUG Common.Messages.GameDef - Decoded Hint = ______
+2017-09-09 13:53:46,081 [Listener] DEBUG Common.Messages.GameDef - Decoded Definition = a variety of European perch
+2017-09-09 13:53:46,081 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:46,081 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:46,081 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:46,081 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:46,081 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=GameDef, GameId=2, Hint=______, LastName=a variety of European perch from 127.0.0.1:12001
+2017-09-09 13:53:46,081 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:46,083 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:46,343 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:46,343 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:46,343 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:46,343 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:46,343 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:46,343 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:46,343 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:46,343 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:46,343 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:46,343 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:46,343 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:46,343 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:46,343 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:46,343 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:46,343 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:46,343 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:46,343 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:46,344 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:46,839 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:46,839 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:46,839 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:46,839 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:46,839 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:46,839 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:46,839 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:46,839 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:46,839 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:46,839 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:46,839 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:46,839 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:46,839 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:46,839 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:46,839 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:46,839 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:46,839 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:46,840 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:47,343 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:47,343 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:47,343 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:47,343 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:47,343 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:47,343 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:47,343 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:47,343 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:47,343 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:47,343 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:47,343 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:47,343 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:47,343 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:47,343 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:47,343 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:47,343 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:47,343 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:47,344 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:47,843 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:47,843 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:47,843 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:47,843 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:47,843 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:47,843 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:47,843 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:47,843 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:47,843 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:47,843 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:47,843 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:47,843 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:47,844 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:47,844 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:47,844 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:47,844 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:47,844 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:47,844 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:48,349 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:48,349 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:48,349 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:48,349 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:48,349 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:48,349 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:48,349 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:48,349 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:48,349 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:48,349 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:48,349 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:48,349 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:48,349 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:48,349 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:48,349 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:48,349 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:48,349 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:48,350 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:48,840 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:48,840 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:48,840 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:48,840 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:48,840 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:48,840 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:48,840 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:48,840 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:48,840 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:48,840 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:48,840 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:48,840 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:48,840 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:48,840 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:48,840 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:48,840 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:48,840 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:48,841 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:49,345 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:49,345 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:49,345 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:49,345 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:49,345 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:49,345 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:49,345 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:49,345 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:49,345 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:49,345 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:49,345 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:49,345 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:49,345 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:49,345 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:49,345 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:49,345 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:49,345 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:49,346 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:49,851 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:49,851 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:49,851 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:49,851 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:49,851 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:49,851 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:49,851 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:49,851 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:49,851 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:49,851 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:49,851 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:49,851 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:49,851 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:49,851 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:49,851 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:49,851 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:49,851 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:49,852 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:50,345 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:50,345 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:50,345 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:50,345 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:50,345 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:50,345 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:50,345 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:50,345 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:50,345 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:50,345 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:50,345 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:50,345 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:50,346 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:50,346 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:50,346 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:50,346 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:50,346 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:50,346 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:50,843 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:50,843 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:50,843 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:50,843 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:50,843 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:50,843 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:50,843 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:50,843 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:50,843 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:50,843 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:50,843 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:50,843 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:50,843 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:50,843 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:50,843 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:50,843 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:50,843 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:50,843 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:51,351 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:51,351 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:51,351 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:51,351 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:51,351 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:51,351 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:51,351 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:51,351 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:51,351 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:51,351 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:51,351 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:51,351 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:51,351 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:51,351 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:51,351 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:51,351 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:51,351 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:51,352 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:51,845 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:51,845 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:51,847 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:51,847 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:51,847 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:51,847 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:51,847 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:51,847 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:51,847 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:51,847 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:51,847 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:51,847 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:51,847 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:51,847 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:51,847 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:51,847 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:51,847 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:51,848 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:52,354 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:52,354 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:52,354 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:52,354 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:52,354 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:52,354 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:52,354 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:52,354 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:52,354 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:52,354 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:52,354 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:52,354 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:52,354 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:52,354 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:52,354 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:52,354 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:52,354 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:52,355 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:52,854 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:52,854 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:52,854 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:52,854 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:52,854 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:52,854 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:52,854 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:52,854 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:52,854 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:52,854 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:52,854 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:52,854 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:52,854 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:52,854 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:52,854 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:52,854 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:52,854 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:52,855 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:53,356 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:53,356 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:53,356 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:53,356 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:53,356 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:53,356 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:53,356 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:53,356 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:53,356 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:53,356 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:53,356 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:53,356 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:53,356 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:53,356 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:53,356 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:53,356 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:53,356 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:53,357 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:53,848 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:53,848 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:53,848 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:53,848 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:53,848 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:53,848 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:53,848 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:53,848 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:53,848 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:53,848 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:53,848 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:53,848 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:53,848 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:53,848 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:53,848 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:53,848 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:53,848 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:53,848 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:54,350 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:54,350 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:54,350 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:54,350 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:54,350 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:54,350 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:54,350 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:54,350 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:54,350 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:54,350 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:54,350 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:54,350 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:54,350 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:54,350 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:54,350 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:54,350 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:54,350 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:54,351 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:54,850 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:54,850 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:54,850 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:54,850 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:54,850 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:54,850 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:54,850 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:54,850 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:54,850 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:54,850 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:54,850 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:54,850 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:54,850 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:54,850 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:54,850 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:54,850 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:54,850 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:54,851 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:55,357 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:55,357 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:55,357 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:55,357 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:55,357 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:55,357 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:55,357 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:55,357 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:55,357 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:55,357 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:55,357 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:55,357 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:55,357 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:55,357 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:55,357 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:55,357 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:55,357 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:55,358 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:55,853 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:55,853 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:55,853 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:55,853 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:55,853 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:55,853 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:55,853 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:55,853 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:55,853 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:55,853 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:55,853 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:55,853 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:55,853 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:55,853 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:55,853 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:55,853 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:55,853 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:55,854 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:56,355 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:56,355 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:56,355 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:56,355 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:56,355 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:56,355 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:56,355 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:56,355 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:56,355 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:56,355 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:56,355 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:56,355 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:56,355 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:56,355 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:56,355 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:56,355 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:56,355 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:56,356 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:56,857 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:56,857 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:56,857 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:56,857 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:56,857 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:56,857 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:56,857 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:56,857 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:56,857 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:56,857 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:56,857 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:56,857 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:56,857 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:56,857 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:56,857 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:56,857 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:56,857 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:56,858 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:57,361 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:57,361 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:57,361 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:57,361 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:57,361 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:57,361 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:57,361 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:57,361 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:57,361 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:57,361 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:57,361 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:57,361 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:57,361 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:57,361 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:57,361 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:57,361 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:57,361 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:57,362 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:57,864 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:57,864 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:57,864 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:57,864 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:57,864 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:57,864 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:57,864 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:57,864 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:57,864 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:57,864 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:57,864 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:57,864 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:57,864 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:57,864 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:57,864 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:57,864 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:57,864 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:57,865 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:58,356 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:58,356 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:58,356 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:58,356 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:58,356 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:58,356 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:58,356 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:58,356 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:58,356 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:58,356 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:58,356 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:58,356 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:58,356 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:58,356 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:58,356 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:58,356 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:58,356 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:58,357 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:58,865 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:58,865 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:58,865 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:58,865 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:58,865 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:58,865 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:58,865 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:58,865 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:58,865 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:58,865 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:58,865 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:58,865 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:58,865 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:58,865 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:58,865 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:58,865 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:58,865 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:58,866 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:59,359 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:59,359 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:59,359 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:59,359 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:59,359 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:59,359 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:59,359 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:59,359 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:59,359 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:59,359 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:59,359 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:59,359 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:59,359 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:59,359 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:59,359 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:59,359 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:59,359 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:59,360 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:59,865 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:59,865 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:53:59,865 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:59,865 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:59,865 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:53:59,865 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:53:59,865 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:53:59,865 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:53:59,865 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:59,865 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:59,865 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:53:59,865 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:59,865 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:53:59,865 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:53:59,865 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:53:59,865 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:53:59,865 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:53:59,866 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:00,361 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:00,361 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:00,361 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:00,361 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:00,361 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:00,361 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:00,361 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:00,361 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:00,361 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:00,361 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:00,361 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:00,361 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:00,361 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:00,361 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:00,361 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:00,361 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:00,361 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:00,362 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:00,859 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:00,859 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:00,859 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:00,859 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:00,859 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:00,859 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:00,859 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:00,859 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:00,859 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:00,859 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:00,859 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:00,859 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:00,859 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:00,859 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:00,859 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:00,859 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:00,859 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:00,860 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:01,364 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:01,364 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:01,364 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:01,364 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:01,364 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:01,364 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:01,364 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:01,364 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:01,364 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:01,364 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:01,364 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:01,364 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:01,364 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:01,364 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:01,364 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:01,364 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:01,364 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:01,365 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:01,870 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:01,870 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:01,870 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:01,870 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:01,870 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:01,870 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:01,870 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:01,870 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:01,870 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:01,870 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:01,870 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:01,870 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:01,870 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:01,870 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:01,870 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:01,870 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:01,870 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:01,871 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:02,366 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:02,366 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:02,366 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:02,366 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:02,366 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:02,366 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:02,366 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:02,366 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:02,366 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:02,366 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:02,366 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:02,366 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:02,366 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:02,366 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:02,366 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:02,366 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:02,366 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:02,366 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:02,872 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:02,872 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:02,872 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:02,872 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:02,872 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:02,872 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:02,872 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:02,872 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:02,872 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:02,872 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:02,872 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:02,872 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:02,872 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:02,872 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:02,872 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:02,872 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:02,872 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:02,872 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:03,367 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:03,367 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:03,367 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:03,367 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:03,367 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:03,367 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:03,367 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:03,367 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:03,367 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:03,367 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:03,367 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:03,367 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:03,367 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:03,367 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:03,367 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:03,367 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:03,367 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:03,368 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:03,868 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:03,868 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:03,868 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:03,868 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:03,868 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:03,868 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:03,868 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:03,868 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:03,868 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:03,868 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:03,868 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:03,868 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:03,868 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:03,868 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:03,868 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:03,868 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:03,868 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:03,869 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:04,375 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:04,375 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:04,375 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:04,375 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:04,375 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:04,375 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:04,375 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:04,375 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:04,375 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:04,375 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:04,375 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:04,375 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:04,375 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:04,375 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:04,375 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:04,375 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:04,375 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:04,375 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:04,872 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:04,872 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:04,872 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:04,872 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:04,872 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:04,872 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:04,872 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:04,872 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:04,872 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:04,872 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:04,872 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:04,872 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:04,872 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:04,872 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:04,872 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:04,872 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:04,872 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:04,873 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:05,376 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:05,376 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:05,376 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:05,376 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:05,376 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:05,376 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:05,376 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:05,376 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:05,376 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:05,376 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:05,376 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:05,376 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:05,376 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:05,376 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:05,376 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:05,376 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:05,376 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:05,376 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:05,870 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:05,870 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:05,870 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:05,870 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:05,870 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:05,870 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:05,870 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:05,870 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:05,870 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:05,870 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:05,870 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:05,870 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:05,870 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:05,870 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:05,870 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:05,870 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:05,870 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:05,870 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:06,370 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:06,370 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:06,370 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:06,370 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:06,370 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:06,370 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:06,370 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:06,370 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:06,370 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:06,370 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:06,370 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:06,370 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:06,370 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:06,370 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:06,370 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:06,370 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:06,370 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:06,371 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:06,641 [Listener] DEBUG Common.Messages.GameDef - Decode an GameDef
+2017-09-09 13:54:06,641 [Listener] DEBUG Common.Messages.GameDef - Decoded GameId = 4
+2017-09-09 13:54:06,641 [Listener] DEBUG Common.Messages.GameDef - Decoded Hint = _______
+2017-09-09 13:54:06,641 [Listener] DEBUG Common.Messages.GameDef - Decoded Definition = like a point
+2017-09-09 13:54:06,641 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:06,641 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:06,641 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:06,641 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:06,641 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=GameDef, GameId=4, Hint=_______, LastName=like a point from 127.0.0.1:12001
+2017-09-09 13:54:06,641 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:06,643 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:06,877 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:06,877 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:06,877 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:06,877 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:06,877 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:06,877 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:06,877 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:06,877 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:06,877 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:06,877 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:06,878 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:06,878 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:06,878 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:06,878 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:06,878 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:06,878 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:07,374 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:07,374 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:07,374 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:07,374 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:07,374 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:07,374 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:07,374 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:07,374 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:07,374 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:07,374 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:07,375 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:07,375 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:07,375 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:07,375 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:07,375 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:07,375 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:07,723 [Listener] DEBUG Common.Messages.GameDef - Decode an GameDef
+2017-09-09 13:54:07,723 [Listener] DEBUG Common.Messages.GameDef - Decoded GameId = 5
+2017-09-09 13:54:07,723 [Listener] DEBUG Common.Messages.GameDef - Decoded Hint = ________
+2017-09-09 13:54:07,723 [Listener] DEBUG Common.Messages.GameDef - Decoded Definition = killing of viruses
+2017-09-09 13:54:07,723 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:07,723 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:07,723 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:07,723 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:07,723 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=GameDef, GameId=5, Hint=________, LastName=killing of viruses from 127.0.0.1:12001
+2017-09-09 13:54:07,723 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:07,725 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:07,877 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:07,877 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:07,877 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:07,877 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:07,877 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:07,877 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:07,877 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:07,877 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:07,877 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:07,877 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:07,878 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:07,878 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:07,878 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:07,878 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:07,878 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:07,878 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:07,878 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:07,878 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:07,878 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:07,878 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:07,878 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,124 [Listener] DEBUG Common.Messages.GameDef - Decode an GameDef
+2017-09-09 13:54:08,124 [Listener] DEBUG Common.Messages.GameDef - Decoded GameId = 6
+2017-09-09 13:54:08,124 [Listener] DEBUG Common.Messages.GameDef - Decoded Hint = ______________
+2017-09-09 13:54:08,124 [Listener] DEBUG Common.Messages.GameDef - Decoded Definition = the belief that all religions are equally valid
+2017-09-09 13:54:08,124 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,124 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,124 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,124 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,124 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=GameDef, GameId=6, Hint=______________, LastName=the belief that all religions are equally valid from 127.0.0.1:12001
+2017-09-09 13:54:08,124 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,126 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,372 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,372 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:08,372 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,372 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,372 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,372 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,372 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:08,372 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,372 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,372 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,372 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,372 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:08,372 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,372 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,372 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,372 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,372 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:08,372 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,373 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,373 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,373 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,373 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:08,373 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,373 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,383 [Listener] DEBUG Common.Messages.GameDef - Decode an GameDef
+2017-09-09 13:54:08,383 [Listener] DEBUG Common.Messages.GameDef - Decoded GameId = 7
+2017-09-09 13:54:08,383 [Listener] DEBUG Common.Messages.GameDef - Decoded Hint = _______
+2017-09-09 13:54:08,383 [Listener] DEBUG Common.Messages.GameDef - Decoded Definition = poem of thirteen lines
+2017-09-09 13:54:08,383 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,383 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,383 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,383 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,383 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=GameDef, GameId=7, Hint=_______, LastName=poem of thirteen lines from 127.0.0.1:12001
+2017-09-09 13:54:08,383 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,385 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,878 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,878 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:08,878 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:08,878 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,878 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,878 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:08,878 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:08,878 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,879 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,879 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,879 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,879 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:08,879 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,879 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,879 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,879 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,879 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:08,879 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,879 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,879 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,879 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,879 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:08,879 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,879 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,879 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,879 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,879 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=7 from 127.0.0.1:12001
+2017-09-09 13:54:08,879 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,880 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:08,929 [Listener] DEBUG Common.Messages.GameDef - Decode an GameDef
+2017-09-09 13:54:08,929 [Listener] DEBUG Common.Messages.GameDef - Decoded GameId = 8
+2017-09-09 13:54:08,929 [Listener] DEBUG Common.Messages.GameDef - Decoded Hint = ______
+2017-09-09 13:54:08,929 [Listener] DEBUG Common.Messages.GameDef - Decoded Definition = to burn
+2017-09-09 13:54:08,929 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:08,929 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:08,929 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:08,929 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:08,929 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=GameDef, GameId=8, Hint=______, LastName=to burn from 127.0.0.1:12001
+2017-09-09 13:54:08,929 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:08,931 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:09,381 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,381 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:09,381 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 8
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,381 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,381 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,381 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,381 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:09,381 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=7 from 127.0.0.1:12001
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,382 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=8 from 127.0.0.1:12001
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,382 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:09,875 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 8
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:09,875 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,875 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,875 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,875 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,875 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:09,875 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,876 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,876 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,876 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,876 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:09,876 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,876 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,876 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,876 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,876 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:09,876 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,876 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,876 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,876 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,876 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:09,876 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,877 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,877 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,877 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,877 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=7 from 127.0.0.1:12001
+2017-09-09 13:54:09,877 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,877 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:09,877 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:09,877 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:09,877 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=8 from 127.0.0.1:12001
+2017-09-09 13:54:09,877 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:09,877 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,380 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,380 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,380 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:10,380 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 8
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,380 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,380 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,380 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,380 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:10,380 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=7 from 127.0.0.1:12001
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,381 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=8 from 127.0.0.1:12001
+2017-09-09 13:54:10,381 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,382 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 8
+2017-09-09 13:54:10,878 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,878 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,878 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:10,878 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:10,878 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,878 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,878 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,878 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:10,878 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,879 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,879 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,879 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,879 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:10,879 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,879 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,879 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,879 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,879 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:10,879 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,879 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,879 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,879 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,879 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:10,879 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,879 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,879 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,879 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,879 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=7 from 127.0.0.1:12001
+2017-09-09 13:54:10,879 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,880 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:10,880 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:10,880 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:10,880 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=8 from 127.0.0.1:12001
+2017-09-09 13:54:10,880 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:10,880 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:11,384 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,384 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,384 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:11,384 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,384 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,384 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 8
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,384 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:11,384 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,384 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,384 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,384 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,384 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:11,384 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,385 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,385 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,385 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,385 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:11,385 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,387 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,387 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,387 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,387 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:11,387 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,387 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,387 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,388 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,388 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=7 from 127.0.0.1:12001
+2017-09-09 13:54:11,388 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,388 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,388 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,388 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,388 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=8 from 127.0.0.1:12001
+2017-09-09 13:54:11,388 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,388 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,882 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:11,882 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 8
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:11,882 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,882 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,882 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,882 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,882 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:11,882 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,883 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,883 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,883 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,883 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:11,883 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,883 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,883 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,883 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,883 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:11,883 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,883 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,883 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,883 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,883 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:11,883 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,884 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,884 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,884 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,884 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=7 from 127.0.0.1:12001
+2017-09-09 13:54:11,884 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,884 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:11,884 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:11,884 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:11,884 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=8 from 127.0.0.1:12001
+2017-09-09 13:54:11,884 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:11,884 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,388 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,388 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:12,388 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:12,388 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,388 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,388 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:12,388 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 8
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,388 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,389 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,389 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,389 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:12,389 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,389 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,389 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,389 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,389 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:12,389 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,389 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,389 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,389 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,389 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:12,389 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,389 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,389 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,389 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,389 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=7 from 127.0.0.1:12001
+2017-09-09 13:54:12,389 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,389 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,390 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,390 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,390 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=8 from 127.0.0.1:12001
+2017-09-09 13:54:12,390 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,390 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 8
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:12,883 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,883 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,883 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:12,883 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,883 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,883 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,883 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,883 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=2 from 127.0.0.1:12001
+2017-09-09 13:54:12,883 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=4 from 127.0.0.1:12001
+2017-09-09 13:54:12,884 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=5 from 127.0.0.1:12001
+2017-09-09 13:54:12,884 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=6 from 127.0.0.1:12001
+2017-09-09 13:54:12,884 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=7 from 127.0.0.1:12001
+2017-09-09 13:54:12,884 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:12,884 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=8 from 127.0.0.1:12001
+2017-09-09 13:54:12,885 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:12,885 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 1
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 2
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Worker] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Dequeue
+2017-09-09 13:54:13,387 [Worker] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Dequeue
+2017-09-09 13:54:13,387 [Worker] INFO  WordGuessPlayer.Worker - Processing Type=Heartbeat, GameId=1 from 127.0.0.1:12001
+2017-09-09 13:54:13,387 [Worker] DEBUG WordGuessPlayer.Worker - Enter ProcessMessage
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 4
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 5
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 6
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 7
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decode an HeartbeatMessage
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.HeartbeatMessage - Decoded GameId = 8
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:13,387 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:13,390 [1] DEBUG WordGuessPlayer.PlayerForm - Stop am-alive timer
+2017-09-09 13:54:13,390 [1] DEBUG WordGuessPlayer.PlayerForm - Stopping a listener
+2017-09-09 13:54:13,391 [1] INFO  Common.BackgroundThread - Stopping Listener
+2017-09-09 13:54:13,391 [1] INFO  Common.BackgroundThread - Listener Stopped
+2017-09-09 13:54:13,391 [1] DEBUG WordGuessPlayer.PlayerForm - Stopping a worker
+2017-09-09 13:54:13,391 [1] INFO  Common.BackgroundThread - Stopping Worker
+2017-09-09 13:54:13,391 [1] INFO  Common.BackgroundThread - Worker Stopped
+2017-09-09 13:54:13,394 [Worker] DEBUG WordGuessPlayer.Worker - Leaving ProcessMessage
+2017-09-09 13:54:13,409 [Listener] DEBUG Common.Messages.ErrorMessage - Decode an ErrorMessage
+2017-09-09 13:54:13,409 [Listener] DEBUG Common.Messages.ErrorMessage - Decoded GameId = 1
+2017-09-09 13:54:13,409 [Listener] DEBUG Common.Messages.ErrorMessage - Decoded ErrorText = Server does not accept a message of type Error
+2017-09-09 13:54:13,409 [Listener] DEBUG Common.Messages.MessageQueue - Entering MessageQueue.Enqueue
+2017-09-09 13:54:13,409 [Listener] DEBUG Common.Messages.MessageQueue - Leaving MessageQueue.Enqueue
+2017-09-09 13:54:13,409 [Listener] INFO  Common.Listener - Leaving Process method
