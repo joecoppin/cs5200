@@ -1,0 +1,3 @@
+[submodule "cs5200-project"]
+	path = cs5200-project
+	url = https://github.com/joecoppin/cs5200-project.git
