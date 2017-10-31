@@ -27,7 +27,7 @@ namespace SharedObjects
         /// <returns>A new message number</returns>
         public static MessageId Create()
         {
-            MessageId result = new MessageId()
+            var result = new MessageId()
             {
                 Pid = LocalProcessInfo.Instance.ProcessId,
                 Seq = GetNextSeqNumber()
@@ -74,27 +74,16 @@ namespace SharedObjects
 
         public static int Compare(MessageId a, MessageId b)
         {
-            int result = 0;
+            if (( object) a == null && (object) b == null) return 0;
+            if ((object)a == null) return -1;
+            if ((object)b == null) return 1;
+            if (ReferenceEquals(a, b)) return 0;
 
-            if (!ReferenceEquals(a, b))
-            {
-                if (((object)a == null) && ((object)b != null))
-                    result = -1;
-                else if (((object)a != null) && ((object)b == null))
-                    result = 1;
-                else
-                {
-                    if (a.Pid < b.Pid)
-                        result = -1;
-                    else if (a.Pid > b.Pid)
-                        result = 1;
-                    else if (a.Seq < b.Seq)
-                        result = -1;
-                    else if (a.Seq > b.Seq)
-                        result = 1;
-                }
-            }
-            return result;
+            if (a.Pid < b.Pid) return -1;
+            if (a.Pid > b.Pid) return 1;
+            if (a.Seq < b.Seq) return -1;
+
+            return a.Seq > b.Seq ? 1 : 0;
         }
 
         public static bool operator ==(MessageId a, MessageId b)

@@ -45,8 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataChannelInfoMessage.cs" />
+    <Compile Include="ForecastRequest.cs" />
+    <Compile Include="ForecastResponse.cs" />
     <Compile Include="Message.cs" />
+    <Compile Include="ProgressStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerAliveMessage.cs" />
+    <Compile Include="ServerDiscoveryMessage.cs" />
+    <Compile Include="WeatherDataMessage.cs" />
+    <Compile Include="WeatherDataRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedObjects\SharedObjects.csproj">

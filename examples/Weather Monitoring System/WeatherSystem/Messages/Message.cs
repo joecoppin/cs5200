@@ -14,20 +14,22 @@ namespace Messages
     {
         static Message()
         {
-            Register(typeof(Ack));
-            Register(typeof(Availability));
-            Register(typeof(GetResource));
-            Register(typeof(Nak));
-            Register(typeof(ProcessInfo));
-            Register(typeof(Register));
-            Register(typeof(ReserveResource));
-            Register(typeof(SetupExchange));
-            Register(typeof(Shutdown));
-            Register(typeof(Status));
-            Register(typeof(SubscribeMonitor));
-            Register(typeof(UnsubscribeMonitor));
+            Register(typeof(DataChannelInfoMessage));
+            Register(typeof(ForecastRequest));
+            Register(typeof(ForecastResponse));
+            Register(typeof(Message));
+            Register(typeof(ProgressStatus));
+            Register(typeof(ServerAliveMessage));
+            Register(typeof(ServerDiscoveryMessage));
+            Register(typeof(WeatherDataMessage));
+            Register(typeof(WeatherDataRequest));
 
+            Register(typeof(WeatherData));
             Register(typeof(DateRange));
+            Register(typeof(Location));
+            Register(typeof(PointLocation));
+            Register(typeof(CircleLocation));
+            Register(typeof(AreaLocation));
         }
 
         private static readonly ILog Logger = LogManager.GetLogger(typeof(Message));
@@ -85,7 +87,7 @@ namespace Messages
         /// <returns>A byre array containing the JSON serializations of the message</returns>
         public byte[] Encode()
         {
-            DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(ControlMessage), _serializableTypes);
+            DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(Message), _serializableTypes);
             MemoryStream mstream = new MemoryStream();
             serializer.WriteObject(mstream, this);
 
@@ -99,21 +101,20 @@ namespace Messages
         /// <param name="bytes">A byte array containing an ASCII encoding of a correct JSON serialization of a valid message.</param>
         /// <returns>If successful, a message object, instantied as an instance of the correct specialization of Message.
         /// If unsucessful because the byte array did not contain a correctly serialized message, then null.</returns>
-        public static ControlMessage Decode(byte[] bytes)
+        public static Message Decode(byte[] bytes)
         {
-            ControlMessage result = null;
-            if (bytes != null)
+            Message result = null;
+            if (bytes == null) return null;
+
+            try
             {
-                try
-                {
-                    MemoryStream mstream = new MemoryStream(bytes);
-                    DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(ControlMessage), _serializableTypes);
-                    result = (ControlMessage)serializer.ReadObject(mstream);
-                }
-                catch (Exception err)
-                {
-                    Logger.WarnFormat("Except warning in decoding a message: {0}", err.Message);
-                }
+                var mstream = new MemoryStream(bytes);
+                var serializer = new DataContractJsonSerializer(typeof(Message), _serializableTypes);
+                result = serializer.ReadObject(mstream) as Message;
+            }
+            catch (Exception err)
+            {
+                Logger.WarnFormat($"Except warning in decoding a message: {err.Message}");
             }
             return result;
         }
