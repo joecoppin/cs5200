@@ -87,8 +87,8 @@ namespace Messages
         /// <returns>A byre array containing the JSON serializations of the message</returns>
         public byte[] Encode()
         {
-            DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(Message), _serializableTypes);
-            MemoryStream mstream = new MemoryStream();
+            var serializer = new DataContractJsonSerializer(typeof(Message), _serializableTypes);
+            var mstream = new MemoryStream();
             serializer.WriteObject(mstream, this);
 
             return mstream.ToArray();

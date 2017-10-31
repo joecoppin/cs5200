@@ -67,8 +67,8 @@ namespace CommSubsystem
                     {
                         var localEp = new IPEndPoint(IPAddress.Any, portToTry);
                         _myUdpClient = new UdpClient(localEp);
-                        Task.Factory.StartNew(Receive);
                         _keepGoing = true;
+                        Task.Factory.StartNew(Receive);
                     }
                     catch (SocketException)
                     {

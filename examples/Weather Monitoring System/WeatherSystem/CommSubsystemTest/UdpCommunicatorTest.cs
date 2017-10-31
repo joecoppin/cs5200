@@ -17,8 +17,6 @@ namespace CommSubsystemTest
         [TestMethod]
         public void UdpCommunicator_SimpleSendAndReceive()
         {
-            LocalProcessInfo.Instance.ProcessId = 10;
-
             var comm1 = new UdpCommunicator()
             {
                 MinPort = 10000,
@@ -26,7 +24,6 @@ namespace CommSubsystemTest
                 Timeout = 1000,
                 EnvelopeHandler = ProcessEnvelope1
             };
-
             comm1.Start();
 
             var comm2 = new UdpCommunicator()
@@ -48,6 +45,7 @@ namespace CommSubsystemTest
 
             Thread.Sleep(100);
 
+            Assert.AreNotSame(msg, _lastIncomingEnvelope2);
             Assert.IsNotNull(_lastIncomingEnvelope2);
             Assert.IsNotNull(_lastIncomingEnvelope2.Message);
             Assert.AreEqual(msg.MsgId, _lastIncomingEnvelope2.Message.MsgId);
@@ -55,6 +53,22 @@ namespace CommSubsystemTest
             var msg2 = _lastIncomingEnvelope2.Message as ProgressStatus;
             Assert.IsNotNull(msg2);
             Assert.AreEqual(msg.PercentComplete, msg2.PercentComplete);
+
+            targetEndPoint = new IPEndPoint(IPAddress.Loopback, 100);
+            var msg3 = new ServerAliveMessage();
+            msg3.SetMessageAndConversationIds(MessageId.Create(), msg2.ConvId);
+            var env3 = new Envelope() {Message = msg3, EndPoint = targetEndPoint};
+            comm2.Send(env3);
+
+            Thread.Sleep(100);
+
+            Assert.AreNotSame(msg3, _lastIncomingEnvelope1);
+            Assert.IsNotNull(_lastIncomingEnvelope1);
+            Assert.IsNotNull(_lastIncomingEnvelope1.Message);
+            Assert.AreEqual(msg3.MsgId, _lastIncomingEnvelope1.Message.MsgId);
+            Assert.AreEqual(msg3.ConvId, _lastIncomingEnvelope1.Message.ConvId);
+            var msg4 = _lastIncomingEnvelope1.Message as ServerAliveMessage;
+            Assert.IsNotNull(msg4);
         }
 
         private void ProcessEnvelope1(Envelope env)
