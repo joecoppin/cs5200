@@ -45,6 +45,7 @@
     <Compile Include="AreaLocation.cs" />
     <Compile Include="CircleLocation.cs" />
     <Compile Include="DateRange.cs" />
+    <Compile Include="Error.cs" />
     <Compile Include="LocalProcessInfo.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="MessageId.cs" />

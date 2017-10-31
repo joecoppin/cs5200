@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\3rdParty\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,8 +44,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppProcess.cs" />
+    <Compile Include="CommFacility.cs" />
+    <Compile Include="Conversation.cs" />
+    <Compile Include="ConversationDictionary.cs" />
+    <Compile Include="ConversationFactory.cs" />
+    <Compile Include="EnvelopeQueue.cs" />
+    <Compile Include="Envelope.cs" />
+    <Compile Include="InitiatorConversation.cs" />
+    <Compile Include="ResponderConversation.cs" />
     <Compile Include="UdpCommunicator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Messages\Messages.csproj">
+      <Project>{5bc1776e-c7dc-46d5-904f-8b7e9a97c604}</Project>
+      <Name>Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedObjects\SharedObjects.csproj">
+      <Project>{2aa3ef43-8688-4d24-8741-3cb963200824}</Project>
+      <Name>SharedObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{67af1a54-9a46-433e-83f4-a84243d11ed2}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
