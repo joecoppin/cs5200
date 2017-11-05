@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using log4net.Config;
 
 namespace WeatherStation
 {
@@ -12,11 +10,25 @@ namespace WeatherStation
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main(string[] args)
         {
+            XmlConfigurator.Configure();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            var options = new WeatherStationRuntimeOptions();
+            var parser = new CommandLine.Parser(with => with.HelpWriter = Console.Out);
+
+            if (parser.ParseArgumentsStrict(args, options, () => Environment.Exit(-2)))
+            {
+                options.SetDefaults();
+
+                var displayForm = new MainForm() { Options =  options };
+                Application.Run(displayForm);
+            }
+
+            Application.Run(new MainForm());
         }
     }
 }

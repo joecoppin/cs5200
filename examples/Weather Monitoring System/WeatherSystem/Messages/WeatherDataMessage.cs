@@ -8,6 +8,6 @@ namespace Messages
     {
         public int Count { get; set; }
         [DataMember]
-        public List<WeatherData> ForecastData { get; set; }
+        public List<WeatherData> Data { get; set; }
     }
 }

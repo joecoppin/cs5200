@@ -18,15 +18,6 @@ namespace CommSubsystem
             EndPoint = endPoint;
         }
 
-        public IPEndPoint IpEndPoint
-        {
-            get
-            {
-                return EndPoint ?? new IPEndPoint(IPAddress.Any, 0);
-            }
-            set { EndPoint = value; }
-        }
-
         public bool IsValidToSend => (Message != null &&
                                       EndPoint != null &&
                                       EndPoint.Address.ToString() != "0.0.0.0" &&

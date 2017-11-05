@@ -21,12 +21,8 @@ namespace CommSubsystem
         private UdpClient _myUdpClient;
         private bool _keepGoing;
 
-        public IPAddress GroupAddress { get; set; }
-        public int GroupPort { get; set; }
-        public int TimeoutInMilliseconds { get; set; }
-
-        private ILog _logger;
-        private ILog _loggerDeep;
+        private static readonly ILog Logger = LogManager.GetLogger(typeof(UdpCommunicator));
+        private static readonly ILog LoggerDeep = LogManager.GetLogger(typeof(UdpCommunicator) + "_Deep");
         private static readonly object StartStopLock = new object();
         #endregion
 
@@ -36,7 +32,6 @@ namespace CommSubsystem
         public int Timeout { get; set; }
         public int Port => ((IPEndPoint)_myUdpClient?.Client.LocalEndPoint)?.Port ?? 0;
         public IncomingEnvelopeHandler EnvelopeHandler { get; set; }
-        public string LoggerPrefix { get; set; }
         #endregion
 
         #region Public Methods
@@ -47,12 +42,7 @@ namespace CommSubsystem
         /// </summary>
         public void Start()
         {
-            LoggerPrefix = string.IsNullOrWhiteSpace(LoggerPrefix) ? "" : LoggerPrefix.Trim() + "_";
-
-            _logger = LogManager.GetLogger(LoggerPrefix + typeof(UdpCommunicator));
-            _loggerDeep = LogManager.GetLogger(LoggerPrefix + typeof(UdpCommunicator) + "_Deep");
-
-            _logger.Info("Start communicator");
+            Logger.Info("Start communicator");
 
             ValidPorts();
 
@@ -85,7 +75,7 @@ namespace CommSubsystem
         /// </summary>
         public void Stop()
         {
-            _logger.Debug("Entering Stop");
+            Logger.Debug("Entering Stop");
 
             lock (StartStopLock)
             {
@@ -98,7 +88,7 @@ namespace CommSubsystem
                 }
             }
 
-            _logger.Info("Communicator Stopped");
+            Logger.Info("Communicator Stopped");
         }
 
         /// <summary>
@@ -109,38 +99,43 @@ namespace CommSubsystem
         /// <returns></returns>
         public Error Send(Envelope outgoingEnvelope)
         {
-            Error error = null;
-            if (outgoingEnvelope == null || !outgoingEnvelope.IsValidToSend)
-                _logger.Warn("Invalid Envelope or Message");
-            else
+            if (outgoingEnvelope == null)
             {
-                byte[] bytesToSend = outgoingEnvelope.Message.Encode();
+                Logger.Warn("No envelope to send");
+                return new Error() {Text = "Send failed: no envelope provided"};
+            }
+            if (!outgoingEnvelope.IsValidToSend)
+            {
+                Logger.Warn("Invalid Envelope");
+                return new Error() {Text = "Send failed: Invalid envelope"};
+            }
 
-                _logger.DebugFormat($"Send out: {Encoding.ASCII.GetString(bytesToSend)} to {outgoingEnvelope.EndPoint}");
+            Error error = null;
+           
+            byte[] bytesToSend = outgoingEnvelope.Message.Encode();
+            Logger.DebugFormat($"Send out: {Encoding.ASCII.GetString(bytesToSend)} to {outgoingEnvelope.EndPoint}");
 
-                try
+            try
+            {
+                _myUdpClient.Send(bytesToSend, bytesToSend.Length, outgoingEnvelope.EndPoint);
+            }
+            catch (Exception err)
+            {
+                error = new Error()
                 {
-                    _myUdpClient.Send(bytesToSend, bytesToSend.Length, outgoingEnvelope.EndPoint);
-                    _loggerDeep.Debug("Send complete");
-                }
-                catch (Exception err)
-                {
-                    error = new Error()
-                    {
-                        Text = $"Cannnot send a {outgoingEnvelope.Message.GetType().Name} to {outgoingEnvelope.EndPoint}: {err.Message}"
-                    };
-                    _logger.Warn(error.Text);
-                }
+                    Text = $"Cannnot send a {outgoingEnvelope.Message.GetType().Name} to {outgoingEnvelope.EndPoint}: {err.Message}"
+                };
+                Logger.Warn(error.Text);
             }
             return error;
         }
 
-        public Error JoinMulticastGroup(IPAddress groupAddres)
+        public Error JoinMulticastGroup(IPAddress groupAddress)
         {
             Error error = null;
             try
             {
-                _myUdpClient.JoinMulticastGroup(groupAddres);
+                _myUdpClient.JoinMulticastGroup(groupAddress);
             }
             catch (Exception err)
             {
@@ -149,12 +144,12 @@ namespace CommSubsystem
             return error;
         }
 
-        public Error DropMulticastGroup(IPAddress groupAddres)
+        public Error DropMulticastGroup(IPAddress groupAddress)
         {
             Error error = null;
             try
             {
-                _myUdpClient.DropMulticastGroup(groupAddres);
+                _myUdpClient.DropMulticastGroup(groupAddress);
             }
             catch (Exception err)
             {
@@ -187,16 +182,16 @@ namespace CommSubsystem
                 if (message != null)
                 {
                     result = new Envelope(message, senderEndPoint);
-                    _logger.Debug(
+                    Logger.Debug(
                         $"Just received message, Nr={result.Message.MsgId?.ToString() ?? "null"}, " +
                         $"Conv={result.Message.ConvId?.ToString() ?? "null"}, " +
                         $"Type={result.Message.GetType().Name}, " +
-                        $"From={result.IpEndPoint?.ToString() ?? "null"}");
+                        $"From={result.EndPoint?.ToString() ?? "null"}");
                 }
                 else
                 {
-                    _logger.Error($"Cannot decode message received from {senderEndPoint}");
-                    _logger.Error($"Message={Encoding.ASCII.GetString(receivedBytes)}");
+                    Logger.Error($"Cannot decode message received from {senderEndPoint}");
+                    Logger.Error($"Message={Encoding.ASCII.GetString(receivedBytes)}");
                 }
             }
 
@@ -213,24 +208,24 @@ namespace CommSubsystem
             ep = new IPEndPoint(IPAddress.Any, 0);
             try
             {
-                _loggerDeep.Debug("Try receive bytes from anywhere");
+                LoggerDeep.Debug("Try receive bytes from anywhere");
                 receivedBytes = _myUdpClient.Receive(ref ep);
-                _loggerDeep.Debug("Back from receive");
+                LoggerDeep.Debug("Back from receive");
 
-                if (_logger.IsDebugEnabled)
+                if (Logger.IsDebugEnabled)
                 {
                     var tmp = Encoding.ASCII.GetString(receivedBytes);
-                    _logger.Debug($"Incoming message={tmp}");
+                    Logger.Debug($"Incoming message={tmp}");
                 }
             }
             catch (SocketException err)
             {
                 if (err.SocketErrorCode != SocketError.TimedOut && err.SocketErrorCode != SocketError.Interrupted)
-                    _logger.Warn(err.Message);
+                    Logger.Warn(err.Message);
             }
             catch (Exception err)
             {
-                _logger.Warn(err.Message);
+                Logger.Warn(err.Message);
             }
             return receivedBytes;
         }
@@ -242,11 +237,11 @@ namespace CommSubsystem
                 throw new ApplicationException("Invalid port specifications");
         }
 
-        private int FindAvailablePort(int minPort, int maxPort)
+        private static int FindAvailablePort(int minPort, int maxPort)
         {
             int availablePort = -1;
 
-            _logger.DebugFormat("Find a free port between {0} and {1}", minPort, maxPort);
+            Logger.DebugFormat("Find a free port between {0} and {1}", minPort, maxPort);
             for (int possiblePort = minPort; possiblePort <= maxPort; possiblePort++)
             {
                 if (!IsUsed(possiblePort))
@@ -255,11 +250,11 @@ namespace CommSubsystem
                     break;
                 }
             }
-            _logger.DebugFormat("Available Port = {0}", availablePort);
+            Logger.DebugFormat("Available Port = {0}", availablePort);
             return availablePort;
         }
 
-        private bool IsUsed(int port)
+        private static bool IsUsed(int port)
         {
             var properties = IPGlobalProperties.GetIPGlobalProperties();
             var endPoints = properties.GetActiveUdpListeners();

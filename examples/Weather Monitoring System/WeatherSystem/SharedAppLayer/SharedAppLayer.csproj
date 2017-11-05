@@ -31,8 +31,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\3rdParty\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +46,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conversations\DiscoveryOfServerInitiator.cs" />
+    <Compile Include="Conversations\DiscoveryOfServerResponder.cs" />
+    <Compile Include="EndPointParser.cs" />
+    <Compile Include="WmsMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WmsMainForm.Designer.cs">
+      <DependentUpon>WmsMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WmsAppWorker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommSubsystem\CommSubsystem.csproj">
+      <Project>{83ed2433-92de-4991-bd5e-4115acbecdfc}</Project>
+      <Name>CommSubsystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Messages\Messages.csproj">
+      <Project>{5bc1776e-c7dc-46d5-904f-8b7e9a97c604}</Project>
+      <Name>Messages</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedObjects\SharedObjects.csproj">
+      <Project>{2aa3ef43-8688-4d24-8741-3cb963200824}</Project>
+      <Name>SharedObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WmsMainForm.resx">
+      <DependentUpon>WmsMainForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

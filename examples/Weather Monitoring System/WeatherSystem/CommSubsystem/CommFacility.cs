@@ -1,6 +1,5 @@
-﻿using SharedObjects;
-using System.Net;
-using System.Net.NetworkInformation;
+﻿using CommSubsystem.Conversations;
+using SharedObjects;
 using log4net;
 
 namespace CommSubsystem
@@ -9,21 +8,17 @@ namespace CommSubsystem
     {
         private static readonly ILog Logger = LogManager.GetLogger(typeof(CommFacility));
 
-        private UdpCommunicator _myUdpCommunicator;
-        private IPAddress _bestAddress;
-        private readonly ConversationDictionary _conversationDictionary;
         private readonly ConversationFactory _conversationFactory;
-        private readonly AppProcess _appProcess;
+        private readonly ConversationDictionary _conversationDictionary;
+        private UdpCommunicator _myUdpCommunicator;
 
-        public AppProcess AppProcess => _appProcess;
-        public int Port => _myUdpCommunicator?.Port ?? 0;
-        public string BestLocalEndPoint => $"{FindBestLocalIpAddress()}:{Port}";
+        public AppWorker AppProcess { get; }
 
-        public CommFacility(AppProcess appProcess, ConversationFactory factory)
+        public CommFacility(AppWorker appProcess, ConversationFactory factory)
         {
-            _appProcess = appProcess;
+            AppProcess = appProcess;
             _conversationFactory = factory;
-            _conversationFactory.ManagingSubsystem = this;
+            _conversationFactory.ManagingCommFacility = this;
             _conversationDictionary = new ConversationDictionary();
         }
 
@@ -35,14 +30,12 @@ namespace CommSubsystem
         {
             _conversationFactory.Initialize();
 
-            // TODO: Get setting from a command line via a settings object
             _myUdpCommunicator = new UdpCommunicator() 
             {
-                MinPort = 12000,
-                MaxPort = 19999,
-                Timeout = 2000,
-                LoggerPrefix = "",
-                EnvelopeHandler = ProcessIncomingEnvelope
+                MinPort = AppProcess.Options.MinPort,
+                MaxPort = AppProcess.Options.MaxPort,
+                Timeout = AppProcess.Options.Timeout,
+                EnvelopeHandler = DelegateToConversation
             };
 
         }
@@ -81,45 +74,23 @@ namespace CommSubsystem
             return _myUdpCommunicator.Send(env);
         }
 
-        public void ProcessIncomingEnvelope(Envelope env)
+        public void DelegateToConversation(Envelope envelope)
         {
-            if (env == null) return;
+            if (envelope == null) return;
 
-            var existConversation = _conversationDictionary.Lookup(env.Message.ConvId);
+            var existConversation = _conversationDictionary.Lookup(envelope.Message.ConvId);
             if (existConversation != null)
-                existConversation.Enqueue(env);
+                existConversation.Enqueue(envelope);
             else
             {
-                var conv = _conversationFactory.CreateFromMessage(env);
+                var conv = _conversationFactory.Create(envelope);
                 conv?.Launch();
             }
         }
 
-        private IPAddress FindBestLocalIpAddress()
+        public void CreateConversationQueue(MessageId queueId, Conversation conv)
         {
-            if (_bestAddress != null) return _bestAddress;
-
-            long bestPreferredLifetime = 0;
-            NetworkInterface[] adapters = NetworkInterface.GetAllNetworkInterfaces();
-            foreach (NetworkInterface adapter in adapters)
-            {
-                if (adapter.NetworkInterfaceType == NetworkInterfaceType.Wireless80211 ||
-                    adapter.NetworkInterfaceType == NetworkInterfaceType.Ethernet)
-                {
-                    foreach (UnicastIPAddressInformation ip in adapter.GetIPProperties().UnicastAddresses)
-                    {
-                        if (ip.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
-                        {
-                            if (_bestAddress == null || ip.AddressPreferredLifetime > bestPreferredLifetime)
-                            {
-                                _bestAddress = ip.Address;
-                                bestPreferredLifetime = ip.AddressPreferredLifetime;
-                            }
-                        }
-                    }
-                }
-            }
-            return _bestAddress;
+            _conversationDictionary.Add(queueId, conv);
         }
 
     }

@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CommandLine">
+      <HintPath>..\3rdParty\CommandLine.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\3rdParty\log4net.dll</HintPath>
     </Reference>
@@ -44,15 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppProcess.cs" />
+    <Compile Include="AppWorker.cs" />
     <Compile Include="CommFacility.cs" />
-    <Compile Include="Conversation.cs" />
+    <Compile Include="Conversations\Conversation.cs" />
     <Compile Include="ConversationDictionary.cs" />
     <Compile Include="ConversationFactory.cs" />
     <Compile Include="EnvelopeQueue.cs" />
     <Compile Include="Envelope.cs" />
-    <Compile Include="InitiatorConversation.cs" />
-    <Compile Include="ResponderConversation.cs" />
+    <Compile Include="Conversations\InitiatorConversation.cs" />
+    <Compile Include="Conversations\ResponderConversation.cs" />
+    <Compile Include="RunTimeOptions.cs" />
+    <Compile Include="StateChange.cs" />
     <Compile Include="UdpCommunicator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
